@@ -35,7 +35,19 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
 	<?php include_once "header.php"; ?>
-
+	<!--index carousel -->
+	<section class="home-carousel">
+		<div class="swiper home-carousel-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/slide-1.webp" class="img-fluid" alt="Fireworks Slide 1">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slide-2.webp" class="img-fluid" alt="Fireworks Slide 2">
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<?php include_once "footer.php"; ?>

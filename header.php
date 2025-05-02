@@ -1,16 +1,4 @@
 <!-- Marquee Topbar -->
-<!-- <div id="headerTop" class="sparkle-header-topbar py-2 text-center">
-    <div class="container">
-        <div class="marquee-content">
-            <span><i class="bi bi-stars"></i> Diwali sale is open now. Buy early for the best discounts! Happy Diwali!
-                <i class="bi bi-stars"></i></span>
-            <span class="contact-info">
-                <a href="https://wa.me/919999999999" class="mx-2"><i class="bi bi-whatsapp"></i> +91 9999999999</a>
-                <a href="tel:+918888888888" class="mx-2"><i class="bi bi-telephone"></i> +91 8888888888</a>
-            </span>
-        </div>
-    </div>
-</div> -->
 <div id="headerTop" class="sparkle-header-topbar py-2 text-center marquee-left">
     <i class="bi bi-stars"></i>Diwali sale is open now. Buy early for the best discounts! Happy Diwali...!!!!
     &nbsp; <i class="bi bi-whatsapp text-success"></i> +91 9999999999
@@ -23,28 +11,24 @@
     <div class="sparkle-top-info py-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <div class="d-flex flex-wrap align-items-center justify-content-lg-start justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="">
                         <div class="info-item">
                             <i class="bi bi-geo-alt-fill"></i>
                             <span>1234 Fireworks Street, Chennai</span>
                         </div>
-                        <div class="info-item">
-                            <i class="bi bi-clock-fill"></i>
-                            <span>Mon-Sat: 9am - 8pm</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="bi bi-envelope-fill"></i>
-                            <a href="mailto:support@example.com">support@example.com</a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block">
-                    <div class="social-links text-right">
-                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span>Mon-Sat: 9am - 8pm</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:support@example.com">support@example.com</a>
                     </div>
                 </div>
             </div>
@@ -72,11 +56,26 @@
                     <div class="col-lg-6 d-none d-lg-block">
                         <nav class="sparkle-navigation">
                             <ul class="nav justify-content-center">
-                                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="about.php">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
-                                <li class="nav-item"><a class="nav-link" href="safety.php">Safety Tips</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link <?php if ($page == 'home')
+                                        echo 'active'; ?>" href="index.php">Home</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link <?php if ($page == 'about')
+                                        echo 'active'; ?>" href="about.php">About</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link <?php if ($page == 'products')
+                                        echo 'active'; ?>" href="products.php">Products</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link <?php if ($page == 'safetytips')
+                                        echo 'active'; ?>" href="safetytips.php">Safety Tips</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link <?php if ($page == 'contact')
+                                        echo 'active'; ?>" href="contact.php">Contact</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -84,8 +83,6 @@
                     <!-- Header Actions & Mobile Menu Toggle -->
                     <div class="col-lg-3 col-md-6 col-4">
                         <div class="sparkle-header-actions text-right">
-                            <a href="#" class="search-btn"><i class="bi bi-search"></i></a>
-                            <a href="#" class="cart-btn"><i class="bi bi-cart3"></i><span class="badge">3</span></a>
                             <button class="mobile-menu-toggle d-lg-none" type="button" data-toggle="modal"
                                 data-target="#offcanvasMenu">
                                 <i class="bi bi-list"></i>
@@ -114,11 +111,26 @@
             <div class="modal-body">
                 <nav class="offcanvas-navigation">
                     <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="about.php">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="safety.php">Safety Tips</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link <?php if ($page == 'home')
+                                echo 'active'; ?>" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link <?php if ($page == 'about')
+                                echo 'active'; ?>" href="about.php">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link <?php if ($page == 'products')
+                                echo 'active'; ?>" href="products.php">Products</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link <?php if ($page == 'safetytips')
+                                echo 'active'; ?>" href="safetytips.php">Safety Tips</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link <?php if ($page == 'contact')
+                                echo 'active'; ?>" href="contact.php">Contact</a>
+                        </li>
                     </ul>
                 </nav>
 

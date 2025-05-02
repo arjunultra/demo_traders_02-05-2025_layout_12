@@ -503,6 +503,28 @@ li {
     font-size: 2.2rem;
   }
 }
+/* index carousel */
+/* home carousel */
+section.home-carousel {
+  position: relative;
+}
+
+section.home-carousel .home-carousel-swiper {
+  width: 100%;
+}
+
+section.home-carousel .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+section.home-carousel .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* custom css ends */
 .w0 {
   width: 0%;
