@@ -35,6 +35,10 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
     <?php include_once "header.php"; ?>
+    <section class="about-banner wow fadeInRight" wow-delay="5s">
+        <img class="img-fluid w-100" src="images/about-banner.webp" alt="demo traders about banner"
+            title="Demo Traders">
+    </section>
 
 
 

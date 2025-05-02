@@ -1,5 +1,5 @@
 <!-- Marquee Topbar -->
-<div id="headerTop" class="sparkle-header-topbar py-2 text-center">
+<!-- <div id="headerTop" class="sparkle-header-topbar py-2 text-center">
     <div class="container">
         <div class="marquee-content">
             <span><i class="bi bi-stars"></i> Diwali sale is open now. Buy early for the best discounts! Happy Diwali!
@@ -10,6 +10,11 @@
             </span>
         </div>
     </div>
+</div> -->
+<div id="headerTop" class="sparkle-header-topbar py-2 text-center marquee-left">
+    <i class="bi bi-stars"></i>Diwali sale is open now. Buy early for the best discounts! Happy Diwali...!!!!
+    &nbsp; <i class="bi bi-whatsapp text-success"></i> +91 9999999999
+    &nbsp; <i class="bi bi-telephone text-primary"></i> +91 8888888888, +91 7777777777
 </div>
 
 <!-- Main Header -->
@@ -48,7 +53,7 @@
 
     <!-- Main Header Section -->
     <div class="sparkle-main-header-wrapper">
-        <div class="container">
+        <div class="container-fluid p-0">
             <div class="sparkle-main-header py-3">
                 <div class="row align-items-center">
                     <!-- Logo Area with Background Shape -->
@@ -56,7 +61,7 @@
                         <div class="sparkle-logo-area">
                             <div class="sparkle-logo">
                                 <a href="index.php">
-                                    <img src="images/logo.png" alt="Fireworks Shop Logo" class="img-fluid"
+                                    <img src="images/logo.webp" alt="Fireworks Shop Logo" class="img-fluid"
                                         title="Sparkle Fireworks">
                                 </a>
                             </div>
@@ -100,7 +105,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="modal-title">
-                    <img src="images/logo.png" alt="Fireworks Shop Logo" class="img-fluid" style="max-height: 40px;">
+                    <img src="images/logo.webp" alt="Fireworks Shop Logo" class="img-fluid">
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -143,24 +148,6 @@
     </div>
 </div>
 
-<!-- Header Banner for About Page -->
-<section class="sparkle-page-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="page-banner-content text-center">
-                    <h1>About Our Company</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 

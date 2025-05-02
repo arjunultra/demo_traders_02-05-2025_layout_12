@@ -35,7 +35,10 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
     <?php include_once "header.php"; ?>
-
+    <section class="about-banner">
+        <img class="img-fluid w-100" src="images/products-banner.webp" alt="demo traders about banner"
+            title="Demo Traders">
+    </section>
 
 
     <?php include_once "footer.php"; ?>
