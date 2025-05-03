@@ -51,7 +51,7 @@
 	<!-- welcome section index -->
 	<section class="welcome-section py-5">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row">
 				<div class="col-12 col-lg-6 welcome-section-content mb-4 mb-lg-0">
 					<div class="welcome-section-text-wrapper p-4">
 						<h1 class="welcome-section-title mb-3">Welcome to <span class="highlight">Demo Traders</span>
@@ -112,7 +112,223 @@
 			</div>
 		</div>
 	</section>
+	<!-- index parallax -->
+	<section class="hero-section w-100">
+		<img class="parallax-img img-fluid" src="images/parallax.webp" alt="Parallax Demo">
+	</section>
+	<!-- products section swiper  -->
+	<!-- Products Section -->
+	<section class="products-section py-5">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-12">
+					<div class="products-section-header text-center">
+						<h2 class="products-section-title">Featured <span class="highlight">Products</span></h2>
+						<p class="products-section-subtitle">Discover our premium selection of fireworks for your
+							celebrations</p>
+					</div>
+				</div>
+			</div>
 
+			<div class="row">
+				<div class="col-12">
+					<!-- Swiper container -->
+					<div class="products-section-swiper-container">
+						<div class="swiper-wrapper">
+							<!-- Slide 1 -->
+							<div class="swiper-slide">
+								<div class="products-section-card">
+									<div class="products-section-card-badge">Popular</div>
+									<div class="products-section-card-image">
+										<img src="images/product-1.webp" alt="Stellar Burst Firework" class="img-fluid">
+									</div>
+									<div class="products-section-card-content">
+										<h4 class="products-section-card-title">Stellar Burst</h4>
+										<div class="products-section-card-rating">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<span>(128)</span>
+										</div>
+										<p class="products-section-card-desc">Multi-color bursting flowers with
+											crackling stars finale.</p>
+										<div class="products-section-card-footer">
+											<span class="products-section-card-price">$42.99</span>
+											<button class="products-section-card-btn">
+												<i class="bi bi-cart-plus"></i> Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<div class="products-section-card">
+									<div class="products-section-card-badge products-section-card-badge-new">New</div>
+									<div class="products-section-card-image">
+										<img src="images/product-3.webp" alt="Golden Comet Firework" class="img-fluid">
+									</div>
+									<div class="products-section-card-content">
+										<h4 class="products-section-card-title">Golden Comet</h4>
+										<div class="products-section-card-rating">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star"></i>
+											<span>(87)</span>
+										</div>
+										<p class="products-section-card-desc">Brilliant gold tail rising to a crackling
+											willow effect.</p>
+										<div class="products-section-card-footer">
+											<span class="products-section-card-price">$38.50</span>
+											<button class="products-section-card-btn">
+												<i class="bi bi-cart-plus"></i> Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 3 -->
+							<div class="swiper-slide">
+								<div class="products-section-card">
+									<div class="products-section-card-badge products-section-card-badge-sale">Sale</div>
+									<div class="products-section-card-image">
+										<img src="images/product-1.webp" alt="Thunder King Firework" class="img-fluid">
+									</div>
+									<div class="products-section-card-content">
+										<h4 class="products-section-card-title">Thunder King</h4>
+										<div class="products-section-card-rating">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<span>(206)</span>
+										</div>
+										<p class="products-section-card-desc">Loud report with bright flash and stunning
+											color burst.</p>
+										<div class="products-section-card-footer">
+											<div class="products-section-card-price-wrapper">
+												<span class="products-section-card-price-old">$59.99</span>
+												<span class="products-section-card-price">$48.75</span>
+											</div>
+											<button class="products-section-card-btn">
+												<i class="bi bi-cart-plus"></i> Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 4 -->
+							<div class="swiper-slide">
+								<div class="products-section-card">
+									<div class="products-section-card-image">
+										<img src="images/product-3.webp" alt="Rainbow Fountain Firework"
+											class="img-fluid">
+									</div>
+									<div class="products-section-card-content">
+										<h4 class="products-section-card-title">Rainbow Fountain</h4>
+										<div class="products-section-card-rating">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<i class="bi bi-star"></i>
+											<span>(93)</span>
+										</div>
+										<p class="products-section-card-desc">Long-lasting colorful fountain with
+											changing effects.</p>
+										<div class="products-section-card-footer">
+											<span class="products-section-card-price">$29.99</span>
+											<button class="products-section-card-btn">
+												<i class="bi bi-cart-plus"></i> Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 5 -->
+							<div class="swiper-slide">
+								<div class="products-section-card">
+									<div class="products-section-card-badge products-section-card-badge-limited">Limited
+									</div>
+									<div class="products-section-card-image">
+										<img src="images/product-2.webp" alt="Phoenix Rising Firework"
+											class="img-fluid">
+									</div>
+									<div class="products-section-card-content">
+										<h4 class="products-section-card-title">Phoenix Rising</h4>
+										<div class="products-section-card-rating">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<span>(152)</span>
+										</div>
+										<p class="products-section-card-desc">Red and gold peony bursts with trailing
+											silver comets.</p>
+										<div class="products-section-card-footer">
+											<span class="products-section-card-price">$64.50</span>
+											<button class="products-section-card-btn">
+												<i class="bi bi-cart-plus"></i> Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 6 -->
+							<div class="swiper-slide">
+								<div class="products-section-card">
+									<div class="products-section-card-badge products-section-card-badge-wholesale">
+										Wholesale</div>
+									<div class="products-section-card-image">
+										<img src="images/product-5.webp" alt="Silver Storm Firework Pack"
+											class="img-fluid">
+									</div>
+									<div class="products-section-card-content">
+										<h4 class="products-section-card-title">Silver Storm Pack</h4>
+										<div class="products-section-card-rating">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star"></i>
+											<span>(76)</span>
+										</div>
+										<p class="products-section-card-desc">Wholesale pack of assorted silver effect
+											fireworks.</p>
+										<div class="products-section-card-footer">
+											<span class="products-section-card-price">$189.99</span>
+											<button class="products-section-card-btn">
+												<i class="bi bi-cart-plus"></i> Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-4">
+				<div class="col-12 text-center">
+					<a href="products.php" class="products-section-view-all">
+						View All Products <i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<?php include_once "footer.php"; ?>
 	<div class="fixed point w0">
@@ -144,6 +360,7 @@
 	</script>
 	<script src="js/odometer.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/simpleParallax.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
