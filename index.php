@@ -48,6 +48,70 @@
 			</div>
 		</div>
 	</section>
+	<!-- welcome section index -->
+	<section class="welcome-section py-5">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6 welcome-section-content mb-4 mb-lg-0">
+					<div class="welcome-section-text-wrapper p-4">
+						<h1 class="welcome-section-title mb-3">Welcome to <span class="highlight">Demo Traders</span>
+						</h1>
+						<h3 class="welcome-section-subtitle mb-4">Light Up Your Celebrations</h3>
+						<p class="welcome-section-description mb-4">Experience the magic of premium fireworks for all
+							your special occasions. From dazzling sparklers to spectacular aerial displays, we offer the
+							finest selection for both retail customers and wholesale partners.</p>
+						<div class="welcome-section-buttons">
+							<a href="products.php" class="welcome-section-btn welcome-section-btn-primary mr-3">Explore
+								Products</a>
+							<a href="contact.php" class="welcome-section-btn welcome-section-btn-secondary">Wholesale
+								Inquiry</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="welcome-section-visual">
+						<div class="welcome-section-card">
+							<div class="welcome-section-badge">
+								<span>NEW</span>
+							</div>
+							<h4 class="welcome-section-card-title">Festival Special Collection</h4>
+							<p class="welcome-section-card-text">Limited time offer on our premium fireworks packages.
+								Perfect for upcoming celebrations!</p>
+							<div class="welcome-section-countdown" id="special-offer-countdown">
+								<div class="welcome-section-timer">
+									<span class="welcome-section-days odometer">0</span>
+									<small>Days</small>
+								</div>
+								<div class="welcome-section-timer">
+									<span class="welcome-section-hours odometer">0</span>
+									<small>Hours</small>
+								</div>
+								<div class="welcome-section-timer">
+									<span class="welcome-section-secs odometer">0</span>
+									<small>Secs</small>
+								</div>
+							</div>
+							<a href="products.php" class="welcome-section-card-btn">View Special Offers</a>
+						</div>
+						<div class="welcome-section-features">
+							<div class="welcome-section-feature">
+								<i class="bi bi-truck-front-fill welcome-section-icon"></i>
+								<span>Fast Delivery</span>
+							</div>
+							<div class="welcome-section-feature">
+								<i class="bi bi-shield-fill-check welcome-section-icon"></i>
+								<span>Safety Certified</span>
+							</div>
+							<div class="welcome-section-feature">
+								<i class="bi bi-stars welcome-section-icon"></i>
+								<span>Premium Quality</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<?php include_once "footer.php"; ?>

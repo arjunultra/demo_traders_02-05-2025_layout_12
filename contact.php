@@ -39,8 +39,177 @@
         <img class="img-fluid w-100" src="images/contact-banner.webp" alt="demo traders about banner"
             title="Demo Traders">
     </section>
+    <!-- contact cards -->
+    <section class="fireworks-contact py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+                    <div class="fireworks-contact-header">
+                        <span class="fireworks-contact-badge">Contact Information</span>
+                        <h2 class="fireworks-contact-title">Ready to <span class="fireworks-contact-highlight">Light
+                                Up</span> Your Celebration?</h2>
+                        <p class="fireworks-contact-subtitle">Our fireworks experts are here to help you create
+                            unforgettable moments. Reach out to us today!</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Contact Content -->
+            <div class="row">
+                <!-- Left Column: Info Cards -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="fireworks-contact-info mb-4">
+                        <!-- Visit Us Card -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="fireworks-contact-card">
+                                    <div class="fireworks-contact-card-icon">
+                                        <i class="bi bi-shop"></i>
+                                    </div>
+                                    <div class="fireworks-contact-card-content">
+                                        <h3 class="fireworks-contact-card-title">Visit Our Store</h3>
+                                        <p class="fireworks-contact-card-text">
+                                            <strong>Demo Traders</strong><br>
+                                            24 Festival Street, Cracker's Plaza<br>
+                                            Sivakasi Main Road, Tamil Nadu<br>
+                                            <a href="#" class="fireworks-contact-link">View Store Hours <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Call Us Card -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="fireworks-contact-card">
+                                    <div class="fireworks-contact-card-icon">
+                                        <i class="bi bi-headset"></i>
+                                    </div>
+                                    <div class="fireworks-contact-card-content">
+                                        <h3 class="fireworks-contact-card-title">Call Our Team</h3>
+                                        <div class="fireworks-contact-phone-list">
+                                            <div class="fireworks-contact-phone-item">
+                                                <span>Retail Sales:</span>
+                                                <a href="tel:+919999999999">+91 99999 99999</a>
+                                            </div>
+                                            <div class="fireworks-contact-phone-item">
+                                                <span>Wholesale Orders:</span>
+                                                <a href="tel:+917777777777">+91 77777 77777</a>
+                                            </div>
+                                            <div class="fireworks-contact-phone-item">
+                                                <span>Customer Support:</span>
+                                                <a href="tel:+918888888888">+91 88888 88888</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Card -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="fireworks-contact-card">
+                                    <div class="fireworks-contact-card-icon">
+                                        <i class="bi bi-envelope-open"></i>
+                                    </div>
+                                    <div class="fireworks-contact-card-content">
+                                        <h3 class="fireworks-contact-card-title">Email Us</h3>
+                                        <div class="fireworks-contact-email-list">
+                                            <div class="fireworks-contact-email-item">
+                                                <span>General Inquiries:</span>
+                                                <a
+                                                    href="mailto:hello@sparklefireworks.com">hello@sparklefireworks.com</a>
+                                            </div>
+                                            <div class="fireworks-contact-email-item">
+                                                <span>Wholesale Inquiries:</span>
+                                                <a
+                                                    href="mailto:wholesale@sparklefireworks.com">wholesale@sparklefireworks.com</a>
+                                            </div>
+                                        </div>
+                                        <p class="fireworks-contact-response-note">
+                                            <i class="bi bi-clock"></i> We typically respond within 24 hours
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-12 col-md-6 col-lg-7">
+                    <div class="row">
+                        <!-- Store Hours Card -->
+                        <div class="col-12">
+                            <div class="fireworks-contact-timings mb-4">
+                                <div class="fireworks-contact-card">
+                                    <div class="fireworks-contact-card-icon">
+                                        <i class="bi bi-clock"></i>
+                                    </div>
+                                    <div class="fireworks-contact-card-content">
+                                        <h3 class="fireworks-contact-card-title">Store Hours</h3>
+                                        <div class="fireworks-contact-hours-list">
+                                            <div class="fireworks-contact-hours-item">
+                                                <span class="fireworks-contact-day">Monday - Friday:</span>
+                                                <span class="fireworks-contact-time">9:00 AM to 9:00 PM</span>
+                                            </div>
+                                            <div class="fireworks-contact-hours-item">
+                                                <span class="fireworks-contact-day">Saturday - Sunday:</span>
+                                                <span class="fireworks-contact-time">9:00 AM to 5:00 PM</span>
+                                            </div>
+                                            <div class="fireworks-contact-hours-item special">
+                                                <span class="fireworks-contact-day">Festive Days:</span>
+                                                <span class="fireworks-contact-time">Open 24x7</span>
+                                            </div>
+                                        </div>
+                                        <div class="fireworks-contact-festive-note">
+                                            <i class="bi bi-stars"></i> Extended hours during Diwali, New Year and
+                                            other celebrations
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map - Always ordered last across all screen sizes -->
+                        <div class="col-12 order-last">
+                            <div class="fireworks-contact-map-wrapper mb-4 mb-lg-0">
+                                <div class="fireworks-contact-map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62970.01160346889!2d77.75142297351574!3d9.454179599892328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee43d812d0d%3A0x8ce12e9dcdaa2a2c!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738684672622!5m2!1sen!2sin"
+                                        width="100%" height="300" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                                <a href="https://www.google.com/maps?q=24+Festival+Street,+Sivakasi+Main+Road,+Tamil+Nadu"
+                                    class="fireworks-contact-directions-btn" target="_blank">
+                                    <i class="bi bi-geo-alt"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="contactlast text-white bg-danger">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="helvetica smallfnt mb-0 py-2">
+                        Copyright &copy; 2025, Demo Traders
+                        All rights reserved. Designed & Developed by <a class="text-dark" target="_blank"
+                            href="https://www.srisoftwarez.com/">Sri
+                            Softwarez</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="fixed point w0">
         <a href="https://api.whatsapp.com/send?phone=919999999999">
             <img src="images/whatsappicon.png" class="priceicn float-left" alt="whatsapp contact" title="demo traders">
@@ -64,7 +233,7 @@
             <img src="images/quickpurchase.png" class="priceicn2 float-right blink" alt="" title="">
         </a>
     </div>
-    <script defer src="js/wow.js"></script>
+    <script src="js/wow.js"></script>
     <script>
         new WOW().init();
     </script>

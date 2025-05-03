@@ -38,7 +38,7 @@
     <!-- Main Header Section -->
     <div class="sparkle-main-header-wrapper">
         <div class="container-fluid p-0">
-            <div class="sparkle-main-header py-3">
+            <div class="sparkle-main-header overflow-hidden py-3">
                 <div class="row align-items-center">
                     <!-- Logo Area with Background Shape -->
                     <div class="col-lg-3 col-md-6 col-8">
@@ -143,16 +143,6 @@
                     </div>
                     <div class="info-item">
                         <a href="tel:+911234567890"><i class="bi bi-telephone-fill"></i> +91 12345 67890</a>
-                    </div>
-                </div>
-
-                <div class="offcanvas-social-links mt-4">
-                    <h5>Follow Us</h5>
-                    <div class="social-icons">
-                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
                     </div>
                 </div>
             </div>
