@@ -253,10 +253,202 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll('.parallax-img');
   new SimpleParallax(images, {
-    scale: 1.3,
-    delay: 0.5,
+    scale: 1.5,
+    delay: 5.0,
     transition: 'cubic-bezier(0,0,0,1)',
     orientation: 'up'
   });
 });
+// theme button effects
+function applyThemeButtonEffects(selector) {
+  const btn = document.querySelector(selector);
+  if (!btn) return;
 
+  btn.addEventListener('mouseenter', () => {
+    btn.animate(
+      [
+        { transform: 'scale(1)', boxShadow: '0 0 15px var(--red)' },
+        { transform: 'scale(1.1)', boxShadow: '0 0 40px var(--yellow)' }
+      ],
+      {
+        duration: 500,
+        fill: 'forwards',
+        easing: 'ease-out'
+      }
+    );
+  });
+
+  btn.addEventListener('mouseleave', () => {
+    btn.animate(
+      [
+        { transform: 'scale(1.1)', boxShadow: '0 0 40px var(--yellow)' },
+        { transform: 'scale(1)', boxShadow: '0 0 15px var(--red)' }
+      ],
+      {
+        duration: 400,
+        fill: 'forwards',
+        easing: 'ease-in'
+      }
+    );
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyThemeButtonEffects('.theme-button');
+});
+// index counter
+// Counter Animation for Achievements Section
+$(document).ready(function() {
+  // Function to animate counters
+  function animateCounters() {
+    $('.achievements-counter-number').each(function() {
+      const $this = $(this);
+      const countTo = parseInt($this.attr('data-count'));
+      
+      // Only animate if not already animated
+      if (!$this.hasClass('counted')) {
+        $({ countNum: 0 }).animate({
+          countNum: countTo
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            // Add class to prevent re-animation
+            $this.addClass('counted');
+          }
+        });
+      }
+    });
+  }
+  
+  // Check if element is in viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+    );
+  }
+  
+  // Check on scroll and page load
+  function checkVisibility() {
+    const achievementsSection = document.querySelector('.achievements-section');
+    if (isInViewport(achievementsSection)) {
+      animateCounters();
+      // Remove scroll listener after animation starts
+      $(window).off('scroll.counterAnimation');
+    }
+  }
+  
+  // Add scroll event listener
+  $(window).on('scroll.counterAnimation', function() {
+    checkVisibility();
+  });
+  
+  // Check on page load
+  checkVisibility();
+  
+  // Add hover effect on counter wrappers
+  $('.achievements-counter-wrapper').hover(
+    function() {
+      $(this).find('.achievements-counter-content').css('transform', 'scale(1.05)');
+    },
+    function() {
+      $(this).find('.achievements-counter-content').css('transform', 'scale(1)');
+    }
+  );
+});
+// index safety section
+// Safety Section Animations and Interactions
+$(document).ready(function() {
+  // Animate elements when they come into view
+  function animateSafetySection() {
+    // Check if safety section is in viewport
+    const safetySection = $('.safety-section');
+    const sectionPosition = safetySection.offset().top;
+    const screenPosition = $(window).scrollTop() + $(window).height() * 0.8;
+    
+    if (sectionPosition < screenPosition) {
+      // Animate image with delay
+      setTimeout(function() {
+        $('.safety-image-wrapper').addClass('animated');
+      }, 200);
+      
+      // Animate content elements with staggered delays
+      setTimeout(function() {
+        $('.safety-tagline').addClass('animated');
+      }, 400);
+      
+      setTimeout(function() {
+        $('.safety-heading').addClass('animated');
+      }, 600);
+      
+      // Animate feature items one by one
+      $('.safety-feature-item').each(function(index) {
+        const delay = 800 + (index * 200);
+        const $item = $(this);
+        
+        setTimeout(function() {
+          $item.addClass('animated');
+        }, delay);
+      });
+      
+      setTimeout(function() {
+        $('.safety-description').addClass('animated');
+      }, 1400);
+      
+      setTimeout(function() {
+        $('.safety-cta').addClass('animated');
+      }, 1600);
+      
+      // Remove scroll event after animation is triggered
+      $(window).off('scroll.safetySectionAnimation');
+    }
+  }
+  
+  // Add scroll event
+  $(window).on('scroll.safetySectionAnimation', function() {
+    animateSafetySection();
+  });
+  
+  // Check on page load
+  animateSafetySection();
+  
+  // Badge rotation effect
+  $('.safety-badge').hover(
+    function() {
+      $(this).css('animation', 'none');
+    },
+    function() {
+      $(this).css('animation', 'pulse-badge 2s infinite');
+    }
+  );
+  
+  // Add parallax effect to image on mouse move
+  $('.safety-image-container').on('mousemove', function(e) {
+    const $container = $(this);
+    const $image = $container.find('.safety-image');
+    
+    // Get container dimensions and mouse position
+    const containerWidth = $container.width();
+    const containerHeight = $container.height();
+    const mouseX = e.pageX - $container.offset().left;
+    const mouseY = e.pageY - $container.offset().top;
+    
+    // Calculate movement (max 10px in any direction)
+    const moveX = ((mouseX / containerWidth) - 0.5) * 10;
+    const moveY = ((mouseY / containerHeight) - 0.5) * 10;
+    
+    // Apply transform
+    $image.css('transform', `translate(${moveX}px, ${moveY}px) scale(1.05)`);
+  });
+  
+  // Reset image position when mouse leaves
+  $('.safety-image-container').on('mouseleave', function() {
+    $(this).find('.safety-image').css('transform', 'translate(0, 0)');
+  });
+});
