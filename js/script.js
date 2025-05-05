@@ -452,3 +452,34 @@ $(document).ready(function() {
     $(this).find('.safety-image').css('transform', 'translate(0, 0)');
   });
 });
+
+// about page brands swiper
+// About Page - Brands Swiper Section JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  // Custom swiper for brands section
+  const aboutBrandsSwiper = new Swiper('.about-brands-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      1: { slidesPerView: 1 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+    },
+    on: {
+      slideChangeTransitionStart() {
+        document.querySelectorAll('.about-brands-item.animated')
+          .forEach(item => item.classList.remove('animated'));
+      },
+      slideChangeTransitionEnd() {
+        document.querySelectorAll('.swiper-slide-active .about-brands-item')
+          .forEach(item => item.classList.add('animated'));
+      }
+    }
+  });  
+});

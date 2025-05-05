@@ -115,7 +115,7 @@
 	<!-- index parallax -->
 	<section class="parallax-section position-relative overflow-hidden">
 		<div class="parallax-wrapper">
-			<img class="parallax-img img-fluid" src="images/parallax.webp" alt="Parallax Demo">
+			<img class="parallax-img img-fluid" src="images/parallax.jpg" alt="Parallax Demo">
 			<div class="overlay"></div>
 			<div class="text-content d-flex flex-column align-items-center justify-content-center">
 				<h1 class="gradient-text"><span>Your Trusted Firecracker Partner</span>
@@ -355,7 +355,7 @@
 						for celebrations nationwide. Our commitment to quality, safety, and spectacular displays has
 						earned us recognition as industry leaders.
 					</p>
-					<a href="#contact" class="achievements-cta btn">Partner With Us <i
+					<a href="contact.php" class="achievements-cta btn">Partner With Us <i
 							class="bi bi-arrow-right"></i></a>
 				</div>
 
@@ -535,6 +535,79 @@
 							<span class="safety-cta-icon"><i class="bi bi-arrow-right"></i></span>
 							<span class="safety-cta-bg"></span>
 						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- contact cta -->
+	<!-- Contact CTA Section -->
+	<section class="indexcta-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-6">
+					<h2 class="indexcta-title">Get in Touch with Demo Traders</h2>
+					<h3 class="indexcta-subtitle">Your Premier Fireworks Partner</h3>
+					<p class="indexcta-text">Ready to elevate your fireworks business? As a leading wholesale and retail
+						supplier,
+						we offer premium quality fireworks, competitive pricing, and exceptional customer service. Join
+						our network of successful retailers and light up your profits with our extensive inventory of
+						show-stopping pyrotechnics.</p>
+
+					<div class="indexcta-contact-wrapper">
+						<div class="indexcta-contact-item">
+							<div class="indexcta-icon-wrapper">
+								<i class="bi bi-telephone-fill indexcta-icon"></i>
+							</div>
+							<div class="indexcta-contact-info">
+								<div class="indexcta-contact-label">Call Us Directly</div>
+								<div class="indexcta-contact-value">+91 99999 99999</div>
+							</div>
+						</div>
+
+						<div class="indexcta-contact-item">
+							<div class="indexcta-icon-wrapper">
+								<i class="bi bi-envelope-fill indexcta-icon"></i>
+							</div>
+							<div class="indexcta-contact-info">
+								<div class="indexcta-contact-label">Email Us</div>
+								<div class="indexcta-contact-value">contact@demotraders.com</div>
+							</div>
+						</div>
+
+						<div class="indexcta-contact-item">
+							<div class="indexcta-icon-wrapper">
+								<i class="bi bi-geo-alt-fill indexcta-icon"></i>
+							</div>
+							<div class="indexcta-contact-info">
+								<div class="indexcta-contact-label">Visit Our Office</div>
+								<div class="indexcta-contact-value">123,Demo Building,Demo Street,Demo Colony,Sivakasi.
+								</div>
+							</div>
+						</div>
+
+						<div class="indexcta-contact-item">
+							<div class="indexcta-icon-wrapper">
+								<i class="bi bi-clock-fill indexcta-icon"></i>
+							</div>
+							<div class="indexcta-contact-info">
+								<div class="indexcta-contact-label">Business Hours</div>
+								<div class="indexcta-contact-value">Mon-Fri: 9am-6pm | Sat: 10am-4pm</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-4">
+						<a href="#" class="indexcta-btn">Contact Us</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-12 col-lg-6">
+					<div class="indexcta-image-container">
+						<img src="images/index-last.webp" alt="Fireworks Wholesale" class="indexcta-image">
+						<div class="indexcta-sparkle indexcta-sparkle-1"></div>
+						<div class="indexcta-sparkle indexcta-sparkle-2"></div>
+						<div class="indexcta-sparkle indexcta-sparkle-3"></div>
 					</div>
 				</div>
 			</div>
