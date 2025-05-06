@@ -92,16 +92,20 @@
                         <div class="about-intro-image-accent">
                             <div class="about-intro-stats">
                                 <div class="about-intro-stat">
-                                    <span class="about-intro-stat-number" data-target="25">0</span>
-                                    <span class="about-intro-stat-text">Years</span>
+                                    <span class="about-intro-stat-number odometer" data-target="25">0</span><span
+                                        class="text-white font-weight-bold">+</span>
+                                    <span class="about-intro-stat-text font-weight-bold text-uppercase">Years</span>
                                 </div>
                                 <div class="about-intro-stat">
-                                    <span class="about-intro-stat-number" data-target="1000">0</span>
-                                    <span class="about-intro-stat-text">Products</span>
+                                    <span class="about-intro-stat-number odometer" data-target="1000">0</span><span
+                                        class="text-white font-weight-bold">+</span>
+                                    <span class="about-intro-stat-text font-weight-bold text-uppercase">Products</span>
                                 </div>
                                 <div class="about-intro-stat">
-                                    <span class="about-intro-stat-number" data-target="50000">0</span>
-                                    <span class="about-intro-stat-text">Happy Customers</span>
+                                    <span class="about-intro-stat-number odometer" data-target="50000">0</span><span
+                                        class="text-white font-weight-bold">+</span>
+                                    <span class="about-intro-stat-text font-weight-bold text-uppercase">Happy
+                                        Customers</span>
                                 </div>
                             </div>
                         </div>

@@ -260,13 +260,18 @@ document.addEventListener('DOMContentLoaded', function() {
 // // index parallax
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll('.parallax-img');
-  new SimpleParallax(images, {
-    scale: 1.5,
-    delay: 5.0,
-    transition: 'cubic-bezier(0,0,0,1)',
-    orientation: 'up'
-  });
+
+  // Check if .parallax-img elements are found
+  if (images.length > 0) {
+    new SimpleParallax(images, {
+      scale: 1.5,
+      delay: 5.0,
+      transition: 'cubic-bezier(0,0,0,1)',
+      orientation: 'up'
+    });
+  }
 });
+
 // theme button effects
 function applyThemeButtonEffects(selector) {
   const btn = document.querySelector(selector);
@@ -487,46 +492,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });  
 });
-// document.addEventListener("DOMContentLoaded", function () {
-//   console.log("DOM fully loaded");
 
-//   try {
-//     gsap.registerPlugin(SplitText);
-//     console.log("SplitText registered");
-
-//     let headings = document.querySelectorAll("h1");
-//     console.log(`Found ${headings.length} <h1> elements`);
-
-//     if (headings.length === 0) {
-//       console.warn("No <h1> tags found on the page.");
-//       return;
-//     }
-
-//     let allWords = [];
-
-//     headings.forEach((heading, index) => {
-//       console.log(`Processing <h1> #${index + 1}:`, heading.textContent);
-
-//       let split = new SplitText(heading, { type: "words" });
-//       console.log(`Split into ${split.words.length} words`);
-
-//       allWords.push(...split.words);
-//     });
-
-//     // Animate all words together
-//     gsap.from(allWords, {
-//       y: 100,
-//       autoAlpha: 0,
-//       stagger: 0.05,
-//       duration: 0.8,
-//       ease: "power3.out"
-//     });
-
-//     console.log("Animation started");
-//   } catch (err) {
-//     console.error("GSAP or SplitText error:", err);
-//   }
-// });
 // gsap animation 
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(SplitText, ScrollTrigger);
@@ -566,6 +532,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: subHeading,
         start: getStartPosition(),
+        end: "bottom top", // or "bottom 20%" — tweak as needed
         toggleActions: "play reverse play reverse",
       },
       y: gsap.utils.random([-100, 100]),
@@ -577,6 +544,35 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       duration: 0.8,
       ease: "back.out"
+    });
+  });
+});
+
+// about page counter
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const counters = document.querySelectorAll('.about-intro-stat-number');
+
+  counters.forEach((counter) => {
+    // Initialize odometer
+    const odometer = new Odometer({
+      el: counter,
+      value: 0, // Initial value
+      format: '(,ddd)', // Format
+      theme: 'default'
+    });
+
+    // Get the target value from data attribute
+    const targetValue = parseInt(counter.getAttribute('data-target'), 10);
+
+    // Set up ScrollTrigger
+    ScrollTrigger.create({
+      trigger: counter,
+      start: "top 80%", // Adjust this as necessary
+      onEnter: function () {
+        odometer.update(targetValue);
+      },
     });
   });
 });

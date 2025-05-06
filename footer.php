@@ -82,7 +82,7 @@
             <div class="col-12">
                 <div class="text-center pt-4 mt-4 border-top">
                     <p class="small mb-2 text-muted">Copyright &copy; 2025 Demo Traders. All Rights Reserved.</p>
-                    <a href="https://www.srisoftwarez.com/" class="developer-link">
+                    <a target="_blank" href="https://www.srisoftwarez.com/" class="developer-link">
                         <i class="bi bi-globe"></i> Developed by Sri Softwarez
                     </a>
                 </div>

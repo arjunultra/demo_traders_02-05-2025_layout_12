@@ -1097,7 +1097,7 @@ section.home-carousel .swiper-slide img {
   padding: 25px;
   text-align: center;
   overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease-in;
 }
 
 .achievements-section .achievements-counter-wrapper::before {
@@ -4151,12 +4151,13 @@ section.home-carousel .swiper-slide img {
   }
 
   .achievements-section .achievements-counter-wrapper {
+    width: 143px;
     height: 180px;
     padding: 15px;
   }
 
   .achievements-section .achievements-counter-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .achievements-section .achievements-counter-plus {

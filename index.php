@@ -49,7 +49,7 @@
 		</div>
 	</section>
 	<!-- welcome section index -->
-	<section class="welcome-section py-5">
+	<section class="welcome-section py-5 wow fadeInUp">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-6 welcome-section-content mb-4 mb-lg-0">
@@ -113,7 +113,7 @@
 		</div>
 	</section>
 	<!-- index parallax -->
-	<section class="parallax-section position-relative overflow-hidden">
+	<section class="parallax-section position-relative overflow-hidden wow fadeInUp">
 		<div class="parallax-wrapper">
 			<img class="parallax-img img-fluid" src="images/parallax.webp" alt="Parallax Demo">
 			<div class="overlay"></div>
@@ -127,7 +127,7 @@
 	</section>
 	<!-- products section swiper  -->
 	<!-- Products Section -->
-	<section class="products-section py-5">
+	<section class="products-section py-5 wow fadeInUp">
 		<div class="container-fluid px-5">
 			<div class="row mb-4">
 				<div class="col-12">
@@ -343,7 +343,7 @@
 	</section>
 	<!-- achievements section -->
 	<!-- Achievements Section -->
-	<section class="achievements-section py-5">
+	<section class="achievements-section py-5 wow fadeInUp">
 		<div class="achievements-overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -411,11 +411,11 @@
 		</div>
 	</section>
 	<!-- wholesale & Retail Section -->
-	<section class="section-wholesale-retail py-5 position-relative">
+	<section class="section-wholesale-retail py-5 position-relative wow fadeInUp">
 		<div class="container">
 			<div class="heading-area text-center mb-5">
 				<h2 class="title h1">Retail & Wholesale Fireworks</h2>
-				<p class="subtitle">
+				<p class="subtitle pt-lg-3">
 					Direct from manufacturers – shop bulk fireworks or festive personal packs at best prices.
 				</p>
 			</div>
@@ -464,7 +464,7 @@
 	</section>
 	<!-- safety section -->
 	<!-- Safety Section -->
-	<section class="safety-section py-5">
+	<section class="safety-section py-5 wow fadeInUp">
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
 				<!-- Left Column with Image -->
@@ -542,7 +542,7 @@
 	</section>
 	<!-- contact cta -->
 	<!-- Contact CTA Section -->
-	<section class="indexcta-section">
+	<section class="indexcta-section wow fadeInUp">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-12 col-lg-6">
