@@ -1230,7 +1230,7 @@ section.home-carousel .swiper-slide img {
 /* Mobile: sm (1px to 767.98px) */
 @media (min-width: 1px) and (max-width: 767.98px) {
   .parallax-section .gradient-text {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .parallax-section .text-content {

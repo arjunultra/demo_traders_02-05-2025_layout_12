@@ -45,12 +45,12 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
                     <div class="about-intro-content">
-                        <h2 class="about-intro-title mb-4">Welcome to <span class="highlight">FireWorks Express</span>
+                        <h2 class="about-intro-title mb-4">Our Biography <span class="highlight">for you to know</span>
                         </h2>
                         <p class="about-intro-subtitle mb-3">Your Premier Destination for Quality Fireworks Since 1995
                         </p>
                         <div class="about-intro-text">
-                            <p>At FireWorks Express, we bring joy, celebration, and spectacle to life with our extensive
+                            <p>At Demo traders, we bring joy, celebration, and spectacle to life with our extensive
                                 collection of premium fireworks. For over two decades, we've been lighting up the skies
                                 and creating unforgettable moments for families, events, and celebrations nationwide.
                             </p>
@@ -72,14 +72,14 @@
                                 <i class="bi bi-truck"></i>
                                 <span>Express Delivery</span>
                             </div>
-                            <div class="about-intro-feature">
+                            <div class="about-intro-feature ml-lg-5">
                                 <i class="bi bi-shop"></i>
                                 <span>Wholesale Solutions</span>
                             </div>
                         </div>
                         <div class="about-intro-cta mt-4">
-                            <a href="#" class="btn about-intro-btn">Discover Our Story</a>
-                            <a href="#" class="btn about-intro-btn-outline">Contact Us</a>
+                            <a href="products.php" class="btn about-intro-btn">Discover Our Products</a>
+                            <a href="contact.php" class="btn about-intro-btn-outline">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -92,15 +92,15 @@
                         <div class="about-intro-image-accent">
                             <div class="about-intro-stats">
                                 <div class="about-intro-stat">
-                                    <span class="about-intro-stat-number">25+</span>
-                                    <span class="about-intro-stat-text">Years of Excellence</span>
+                                    <span class="about-intro-stat-number" data-target="25">0</span>
+                                    <span class="about-intro-stat-text">Years</span>
                                 </div>
                                 <div class="about-intro-stat">
-                                    <span class="about-intro-stat-number">1000+</span>
+                                    <span class="about-intro-stat-number" data-target="1000">0</span>
                                     <span class="about-intro-stat-text">Products</span>
                                 </div>
                                 <div class="about-intro-stat">
-                                    <span class="about-intro-stat-number">50k+</span>
+                                    <span class="about-intro-stat-number" data-target="50000">0</span>
                                     <span class="about-intro-stat-text">Happy Customers</span>
                                 </div>
                             </div>
@@ -181,7 +181,7 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <div class="about-values-principles">
-                        <h3 class="about-values-principles-title">What Sets Us Apart</h3>
+                        <h2 class="about-values-principles-title">What Sets Us Apart</h2>
                         <div class="about-values-principles-grid">
                             <div class="row">
                                 <!-- Principle 1 -->
@@ -251,7 +251,7 @@
                 <div class="col-12 text-center">
                     <div class="about-values-cta">
                         <h4 class="about-values-cta-text">Ready to experience the FireWorks Express difference?</h4>
-                        <a href="#" class="btn about-values-cta-btn">Explore Our Products</a>
+                        <a href="products.php" class="btn about-values-cta-btn">Explore Our Products</a>
                     </div>
                 </div>
             </div>
@@ -295,7 +295,7 @@
                                         <img src="images/brand2.webp" alt="PyroMaster"
                                             class="img-fluid about-brands-logo">
                                         <div class="about-brands-overlay">
-                                            <h5 class="text-red font-weight-bold">PyroMaster</h5>
+                                            <h5 class="text-red font-weight-bold">Fireworks Brand2</h5>
                                             <p>Professional Grade Effects</p>
                                         </div>
                                     </div>
@@ -307,7 +307,7 @@
                                         <img src="images/brand3.webp" alt="FireKing"
                                             class="img-fluid about-brands-logo">
                                         <div class="about-brands-overlay">
-                                            <h5 class="text-red font-weight-bold">FireKing</h5>
+                                            <h5 class="text-red font-weight-bold">Fireworks Brand3</h5>
                                             <p>Family-Safe Celebrations</p>
                                         </div>
                                     </div>
@@ -331,7 +331,7 @@
                                         <img src="images/brand5.webp" alt="StarBurst"
                                             class="img-fluid about-brands-logo">
                                         <div class="about-brands-overlay">
-                                            <h5>Fireworks Brand 5</h5>
+                                            <h5 class="text-red font-weight-bold">Fireworks Brand 5</h5>
                                             <p>Colorful Aerial Displays</p>
                                         </div>
                                     </div>
@@ -343,7 +343,7 @@
                                         <img src="images/brand6.webp" alt="GlowWorks"
                                             class="img-fluid about-brands-logo">
                                         <div class="about-brands-overlay">
-                                            <h5>GlowWorks</h5>
+                                            <h5 class="text-red font-weight-bold">Fireworks Brand6</h5>
                                             <p>Specialty Light Effects</p>
                                         </div>
                                     </div>
@@ -355,7 +355,7 @@
                                         <img src="images/brand7.webp" alt="ThunderStrike"
                                             class="img-fluid about-brands-logo">
                                         <div class="about-brands-overlay">
-                                            <h5>ThunderStrike</h5>
+                                            <h5 class="text-red font-weight-bold">Fireworks Brand7</h5>
                                             <p>Powerful Sound Effects</p>
                                         </div>
                                     </div>
@@ -367,7 +367,7 @@
                                         <img src="images/brand8.webp" alt="CelebrationWorks"
                                             class="img-fluid about-brands-logo">
                                         <div class="about-brands-overlay">
-                                            <h5>CelebrationWorks</h5>
+                                            <h5 class="text-red font-weight-bold">Fireworks Brand8</h5>
                                             <p>Event-Specific Products</p>
                                         </div>
                                     </div>
@@ -405,11 +405,15 @@
             <img src="images/quickpurchase.png" class="priceicn2 float-right blink" alt="" title="">
         </a>
     </div>
-    <script defer src="js/wow.js"></script>
+    <script src="js/wow.js"></script>
     <script>
         new WOW().init();
     </script>
     <script src="js/odometer.min.js"></script>
+    <script src="js/simpleParallax.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

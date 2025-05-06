@@ -38,7 +38,7 @@
     <!-- Main Header Section -->
     <div class="sparkle-main-header-wrapper">
         <div class="container-fluid p-0">
-            <div class="sparkle-main-header overflow-hidden py-3">
+            <div class="sparkle-main-header overflow-hidden py-1">
                 <div class="row align-items-center">
                     <!-- Logo Area with Background Shape -->
                     <div class="col-lg-3 col-md-6 col-8">

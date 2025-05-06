@@ -27,88 +27,96 @@ document.addEventListener("DOMContentLoaded", () => {
   // index page welcome section countdown meter using odometer.js
 // Welcome Section Countdown Animation with Odometer
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize Odometer instances for days, hours, and seconds
-  const daysOdometer = new Odometer({
-    el: document.querySelector('.welcome-section-days'),
-    value: 0,
-    format: 'd',
-    duration: 1000
-  });
-  
-  const hoursOdometer = new Odometer({
-    el: document.querySelector('.welcome-section-hours'),
-    value: 0,
-    format: 'd',
-    duration: 1000
-  });
-  
-  const secsOdometer = new Odometer({
-    el: document.querySelector('.welcome-section-secs'),
-    value: 0,
-    format: 'd',
-    duration: 1000
-  });
-  
-  // Set initial values with a slight delay for visual effect
-  setTimeout(function() {
-    daysOdometer.update(10); // Initial days value
-    hoursOdometer.update(8);  // Initial hours value
-    secsOdometer.update(30); // Initial seconds value
-  }, 500);
-  
-  // Calculate end date (10 days, 8 hours from now)
-  const endDate = new Date();
-  endDate.setDate(endDate.getDate() + 10);
-  endDate.setHours(endDate.getHours() + 8);
-  endDate.setSeconds(endDate.getSeconds() + 30);
-  
-  // Update countdown every second (for seconds display)
-  function updateCountdown() {
-    const now = new Date();
-    const timeDiff = endDate - now;
-    
-    if (timeDiff <= 0) {
-      // Countdown has ended
-      daysOdometer.update(0);
-      hoursOdometer.update(0);
-      secsOdometer.update(0);
-      clearInterval(countdownInterval); // Stop the interval when countdown ends
-      return;
-    }
-    
-    // Calculate remaining days, hours, seconds
-    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-    
-    // Update odometer values with smooth animation
-    daysOdometer.update(days);
-    hoursOdometer.update(hours);
-    secsOdometer.update(seconds);
-  }
-  
-  // Initial update
-  updateCountdown();
-  
-  // Update countdown every second (for accurate seconds display)
-  const countdownInterval = setInterval(updateCountdown, 1000);
-  
-  // Add visual pulse effect to the countdown when hovered
+  // Select elements for days, hours, and seconds
+  const daysElement = document.querySelector('.welcome-section-days');
+  const hoursElement = document.querySelector('.welcome-section-hours');
+  const secsElement = document.querySelector('.welcome-section-secs');
   const countdownEl = document.querySelector('.welcome-section-countdown');
-  if (countdownEl) {
-    countdownEl.addEventListener('mouseenter', function() {
-      document.querySelectorAll('.welcome-section-timer').forEach(timer => {
-        timer.classList.add('welcome-section-timer-pulse');
-      });
+
+  if (daysElement && hoursElement && secsElement) {
+    // Initialize Odometer instances
+    const daysOdometer = new Odometer({
+      el: daysElement,
+      value: 0,
+      format: 'd',
+      duration: 1000
     });
-    
-    countdownEl.addEventListener('mouseleave', function() {
-      document.querySelectorAll('.welcome-section-timer').forEach(timer => {
-        timer.classList.remove('welcome-section-timer-pulse');
-      });
+
+    const hoursOdometer = new Odometer({
+      el: hoursElement,
+      value: 0,
+      format: 'd',
+      duration: 1000
     });
+
+    const secsOdometer = new Odometer({
+      el: secsElement,
+      value: 0,
+      format: 'd',
+      duration: 1000
+    });
+
+    // Set initial values with a slight delay for visual effect
+    setTimeout(function() {
+      daysOdometer.update(10); // Initial days value
+      hoursOdometer.update(8);  // Initial hours value
+      secsOdometer.update(30); // Initial seconds value
+    }, 500);
+
+    // Calculate end date (10 days, 8 hours, 30 seconds from now)
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 10);
+    endDate.setHours(endDate.getHours() + 8);
+    endDate.setSeconds(endDate.getSeconds() + 30);
+
+    // Update countdown every second
+    function updateCountdown() {
+      const now = new Date();
+      const timeDiff = endDate - now;
+
+      if (timeDiff <= 0) {
+        // Countdown has ended
+        daysOdometer.update(0);
+        hoursOdometer.update(0);
+        secsOdometer.update(0);
+        clearInterval(countdownInterval);
+        return;
+      }
+
+      // Calculate remaining days, hours, and seconds
+      const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+      // Update odometer values
+      daysOdometer.update(days);
+      hoursOdometer.update(hours);
+      secsOdometer.update(seconds);
+    }
+
+    // Initial update
+    updateCountdown();
+
+    // Update countdown every second
+    const countdownInterval = setInterval(updateCountdown, 1000);
+
+    // Add visual pulse effect to the countdown when hovered
+    if (countdownEl) {
+      countdownEl.addEventListener('mouseenter', function() {
+        document.querySelectorAll('.welcome-section-timer').forEach(timer => {
+          timer.classList.add('welcome-section-timer-pulse');
+        });
+      });
+
+      countdownEl.addEventListener('mouseleave', function() {
+        document.querySelectorAll('.welcome-section-timer').forEach(timer => {
+          timer.classList.remove('welcome-section-timer-pulse');
+        });
+      });
+    }
   }
 });
+
 // products swiper index section
 // Products Section Swiper Initialization with Custom Animation
 document.addEventListener('DOMContentLoaded', function() {
@@ -297,34 +305,35 @@ document.addEventListener('DOMContentLoaded', () => {
   applyThemeButtonEffects('.theme-button');
 });
 // index counter
-// Counter Animation for Achievements Section
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Function to animate counters
   function animateCounters() {
-    $('.achievements-counter-number').each(function() {
-      const $this = $(this);
-      const countTo = parseInt($this.attr('data-count'));
+    const counters = document.querySelectorAll('.achievements-counter-number');
+    counters.forEach(counter => {
+      const countTo = parseInt(counter.getAttribute('data-count'), 10);
       
       // Only animate if not already animated
-      if (!$this.hasClass('counted')) {
-        $({ countNum: 0 }).animate({
-          countNum: countTo
-        }, {
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-            // Add class to prevent re-animation
-            $this.addClass('counted');
+      if (!counter.classList.contains('counted')) {
+        let countNum = 0;
+        const duration = 2000;
+        const increment = countTo / (duration / 16.67); // Assuming 60 FPS
+
+        function updateCounter() {
+          countNum += increment;
+          if (countNum < countTo) {
+            counter.textContent = Math.floor(countNum);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = countTo;
+            counter.classList.add('counted');
           }
-        });
+        }
+
+        updateCounter();
       }
     });
   }
-  
+
   // Check if element is in viewport
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -333,125 +342,120 @@ $(document).ready(function() {
       rect.bottom >= 0
     );
   }
-  
+
   // Check on scroll and page load
   function checkVisibility() {
     const achievementsSection = document.querySelector('.achievements-section');
-    if (isInViewport(achievementsSection)) {
+    if (achievementsSection && isInViewport(achievementsSection)) {
       animateCounters();
-      // Remove scroll listener after animation starts
-      $(window).off('scroll.counterAnimation');
+      window.removeEventListener('scroll', checkVisibility);
     }
   }
-  
+
   // Add scroll event listener
-  $(window).on('scroll.counterAnimation', function() {
-    checkVisibility();
-  });
-  
+  window.addEventListener('scroll', checkVisibility);
+
   // Check on page load
   checkVisibility();
-  
+
   // Add hover effect on counter wrappers
-  $('.achievements-counter-wrapper').hover(
-    function() {
-      $(this).find('.achievements-counter-content').css('transform', 'scale(1.05)');
-    },
-    function() {
-      $(this).find('.achievements-counter-content').css('transform', 'scale(1)');
+  const counterWrappers = document.querySelectorAll('.achievements-counter-wrapper');
+  counterWrappers.forEach(wrapper => {
+    const counterContent = wrapper.querySelector('.achievements-counter-content');
+    if (counterContent) {
+      wrapper.addEventListener('mouseenter', function() {
+        counterContent.style.transform = 'scale(1.05)';
+      });
+      wrapper.addEventListener('mouseleave', function() {
+        counterContent.style.transform = 'scale(1)';
+      });
     }
-  );
+  });
 });
-// index safety section
-// Safety Section Animations and Interactions
-$(document).ready(function() {
+
+document.addEventListener('DOMContentLoaded', function() {
   // Animate elements when they come into view
   function animateSafetySection() {
-    // Check if safety section is in viewport
-    const safetySection = $('.safety-section');
-    const sectionPosition = safetySection.offset().top;
-    const screenPosition = $(window).scrollTop() + $(window).height() * 0.8;
-    
+    const safetySection = document.querySelector('.safety-section');
+    if (!safetySection) return;
+
+    const sectionPosition = safetySection.getBoundingClientRect().top + window.scrollY;
+    const screenPosition = window.scrollY + window.innerHeight * 0.8;
+
     if (sectionPosition < screenPosition) {
       // Animate image with delay
-      setTimeout(function() {
-        $('.safety-image-wrapper').addClass('animated');
+      setTimeout(() => {
+        document.querySelector('.safety-image-wrapper').classList.add('animated');
       }, 200);
-      
+
       // Animate content elements with staggered delays
-      setTimeout(function() {
-        $('.safety-tagline').addClass('animated');
+      setTimeout(() => {
+        document.querySelector('.safety-tagline').classList.add('animated');
       }, 400);
-      
-      setTimeout(function() {
-        $('.safety-heading').addClass('animated');
+
+      setTimeout(() => {
+        document.querySelector('.safety-heading').classList.add('animated');
       }, 600);
-      
+
       // Animate feature items one by one
-      $('.safety-feature-item').each(function(index) {
+      document.querySelectorAll('.safety-feature-item').forEach((item, index) => {
         const delay = 800 + (index * 200);
-        const $item = $(this);
-        
-        setTimeout(function() {
-          $item.addClass('animated');
+        setTimeout(() => {
+          item.classList.add('animated');
         }, delay);
       });
-      
-      setTimeout(function() {
-        $('.safety-description').addClass('animated');
+
+      setTimeout(() => {
+        document.querySelector('.safety-description').classList.add('animated');
       }, 1400);
-      
-      setTimeout(function() {
-        $('.safety-cta').addClass('animated');
+
+      setTimeout(() => {
+        document.querySelector('.safety-cta').classList.add('animated');
       }, 1600);
-      
+
       // Remove scroll event after animation is triggered
-      $(window).off('scroll.safetySectionAnimation');
+      window.removeEventListener('scroll', animateSafetySection);
     }
   }
-  
+
   // Add scroll event
-  $(window).on('scroll.safetySectionAnimation', function() {
-    animateSafetySection();
-  });
-  
+  window.addEventListener('scroll', animateSafetySection);
+
   // Check on page load
   animateSafetySection();
-  
+
   // Badge rotation effect
-  $('.safety-badge').hover(
-    function() {
-      $(this).css('animation', 'none');
-    },
-    function() {
-      $(this).css('animation', 'pulse-badge 2s infinite');
-    }
-  );
-  
-  // Add parallax effect to image on mouse move
-  $('.safety-image-container').on('mousemove', function(e) {
-    const $container = $(this);
-    const $image = $container.find('.safety-image');
-    
-    // Get container dimensions and mouse position
-    const containerWidth = $container.width();
-    const containerHeight = $container.height();
-    const mouseX = e.pageX - $container.offset().left;
-    const mouseY = e.pageY - $container.offset().top;
-    
-    // Calculate movement (max 10px in any direction)
-    const moveX = ((mouseX / containerWidth) - 0.5) * 10;
-    const moveY = ((mouseY / containerHeight) - 0.5) * 10;
-    
-    // Apply transform
-    $image.css('transform', `translate(${moveX}px, ${moveY}px) scale(1.05)`);
+  document.querySelectorAll('.safety-badge').forEach(badge => {
+    badge.addEventListener('mouseenter', function() {
+      badge.style.animation = 'none';
+    });
+    badge.addEventListener('mouseleave', function() {
+      badge.style.animation = 'pulse-badge 2s infinite';
+    });
   });
-  
-  // Reset image position when mouse leaves
-  $('.safety-image-container').on('mouseleave', function() {
-    $(this).find('.safety-image').css('transform', 'translate(0, 0)');
+
+  // Add parallax effect to image on mouse move
+  document.querySelectorAll('.safety-image-container').forEach(container => {
+    const image = container.querySelector('.safety-image');
+
+    container.addEventListener('mousemove', function(e) {
+      const containerWidth = container.offsetWidth;
+      const containerHeight = container.offsetHeight;
+      const mouseX = e.pageX - container.offsetLeft;
+      const mouseY = e.pageY - container.offsetTop;
+
+      const moveX = ((mouseX / containerWidth) - 0.5) * 10;
+      const moveY = ((mouseY / containerHeight) - 0.5) * 10;
+
+      image.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
+    });
+
+    container.addEventListener('mouseleave', function() {
+      image.style.transform = 'translate(0, 0)';
+    });
   });
 });
+
 
 // about page brands swiper
 // About Page - Brands Swiper Section JavaScript
@@ -483,3 +487,99 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });  
 });
+// document.addEventListener("DOMContentLoaded", function () {
+//   console.log("DOM fully loaded");
+
+//   try {
+//     gsap.registerPlugin(SplitText);
+//     console.log("SplitText registered");
+
+//     let headings = document.querySelectorAll("h1");
+//     console.log(`Found ${headings.length} <h1> elements`);
+
+//     if (headings.length === 0) {
+//       console.warn("No <h1> tags found on the page.");
+//       return;
+//     }
+
+//     let allWords = [];
+
+//     headings.forEach((heading, index) => {
+//       console.log(`Processing <h1> #${index + 1}:`, heading.textContent);
+
+//       let split = new SplitText(heading, { type: "words" });
+//       console.log(`Split into ${split.words.length} words`);
+
+//       allWords.push(...split.words);
+//     });
+
+//     // Animate all words together
+//     gsap.from(allWords, {
+//       y: 100,
+//       autoAlpha: 0,
+//       stagger: 0.05,
+//       duration: 0.8,
+//       ease: "power3.out"
+//     });
+
+//     console.log("Animation started");
+//   } catch (err) {
+//     console.error("GSAP or SplitText error:", err);
+//   }
+// });
+// gsap animation 
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(SplitText, ScrollTrigger);
+
+  // Select one h1 and all h2 elements
+  let mainHeading = document.querySelector("h1");
+  let subHeadings = document.querySelectorAll("h2");
+
+  // Function to determine start position based on viewport width
+  function getStartPosition() {
+    return window.innerWidth < 768 ? "top 90%" : "top 80%"; // Adjust the start position for smaller screens
+  }
+
+  // Animate the main h1 heading
+  if (mainHeading) {
+    let splitMain = new SplitText(mainHeading, { type: "words" });
+
+    gsap.from(splitMain.words, {
+      scrollTrigger: {
+        trigger: mainHeading,
+        start: getStartPosition(),
+        toggleActions: "play reverse play reverse",
+      },
+      y: 100,
+      autoAlpha: 0,
+      stagger: 0.05,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+  }
+
+  // Animate all h2 headings
+  subHeadings.forEach((subHeading) => {
+    let splitSub = new SplitText(subHeading, { type: "chars,words" });
+
+    gsap.from(splitSub.chars, {
+      scrollTrigger: {
+        trigger: subHeading,
+        start: getStartPosition(),
+        toggleActions: "play reverse play reverse",
+      },
+      y: gsap.utils.random([-100, 100]),
+      rotation: gsap.utils.random([-45, 45]),
+      autoAlpha: 0,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      duration: 0.8,
+      ease: "back.out"
+    });
+  });
+});
+
+
+

@@ -115,12 +115,12 @@
 	<!-- index parallax -->
 	<section class="parallax-section position-relative overflow-hidden">
 		<div class="parallax-wrapper">
-			<img class="parallax-img img-fluid" src="images/parallax.jpg" alt="Parallax Demo">
+			<img class="parallax-img img-fluid" src="images/parallax.webp" alt="Parallax Demo">
 			<div class="overlay"></div>
-			<div class="text-content d-flex flex-column align-items-center justify-content-center">
-				<h1 class="gradient-text"><span>Your Trusted Firecracker Partner</span>
+			<div class="text-content d-flex flex-column align-items-center justify-content-center p-0 p-md-2 p-lg-2">
+				<h2 class="gradient-text h1"><span>Your Trusted Firecracker Partner</span>
 					<span>Bringing Light to Every Celebration</span>
-				</h1>
+				</h2>
 			</div>
 			<a class="parallax-section-btn" href="about.php">Learn More</a>
 		</div>
@@ -132,7 +132,7 @@
 			<div class="row mb-4">
 				<div class="col-12">
 					<div class="products-section-header text-center">
-						<h2 class="products-section-title">Featured <span class="highlight">Products</span></h2>
+						<h2 class="products-section-title h1">Featured <span class="highlight">Products</span></h2>
 						<p class="products-section-subtitle">Discover our premium selection of fireworks for your
 							celebrations</p>
 					</div>
@@ -349,7 +349,7 @@
 			<div class="row">
 				<!-- Left Content Column -->
 				<div class="col-12 col-md-5 col-lg-5 achievements-content">
-					<h2 class="achievements-heading">Our Achievements</h2>
+					<h2 class="achievements-heading h1">Our Achievements</h2>
 					<p class="achievements-description">
 						With over two decades of experience in the fireworks industry, we've become the trusted supplier
 						for celebrations nationwide. Our commitment to quality, safety, and spectacular displays has
@@ -414,7 +414,7 @@
 	<section class="section-wholesale-retail py-5 position-relative">
 		<div class="container">
 			<div class="heading-area text-center mb-5">
-				<h2 class="title">Retail & Wholesale Fireworks</h2>
+				<h2 class="title h1">Retail & Wholesale Fireworks</h2>
 				<p class="subtitle">
 					Direct from manufacturers – shop bulk fireworks or festive personal packs at best prices.
 				</p>
@@ -466,7 +466,7 @@
 	<!-- Safety Section -->
 	<section class="safety-section py-5">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-center justify-content-center">
 				<!-- Left Column with Image -->
 				<div class="col-12 col-md-6 col-lg-5 mb-4 mb-lg-0">
 					<div class="safety-image-container">
@@ -482,10 +482,10 @@
 				</div>
 
 				<!-- Right Column with Content -->
-				<div class="col-12 col-md-6 col-lg-7">
+				<div class="col-12 col-md-12 col-lg-7">
 					<div class="safety-content">
 						<span class="safety-tagline">Your Safety Is Our Priority</span>
-						<h2 class="safety-heading">Safety Guaranteed <span class="safety-highlight">Fireworks</span>
+						<h2 class="safety-heading h1">Safety Guaranteed <span class="safety-highlight">Fireworks</span>
 						</h2>
 
 						<div class="safety-features">
@@ -546,7 +546,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-12 col-lg-6">
-					<h2 class="indexcta-title">Get in Touch with Demo Traders</h2>
+					<h2 class="indexcta-title h1">Get in Touch with Demo Traders</h2>
 					<h3 class="indexcta-subtitle">Your Premier Fireworks Partner</h3>
 					<p class="indexcta-text">Ready to elevate your fireworks business? As a leading wholesale and retail
 						supplier,
@@ -598,7 +598,7 @@
 					</div>
 
 					<div class="mt-4">
-						<a href="#" class="indexcta-btn">Contact Us</a>
+						<a href="contact.php" class="indexcta-btn">Contact Us</a>
 					</div>
 				</div>
 
@@ -645,6 +645,9 @@
 	<script src="js/odometer.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/simpleParallax.js"></script>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/SplitText.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
