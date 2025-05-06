@@ -150,23 +150,6 @@ li {
   z-index: 5;
 }
 
-/* Logo Background Shape (visible only on lg screens) */
-@media screen and (min-width: 992px) {
-  .sparkle-logo-area:before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    left: -15px;
-    height: 160px;
-    background-image: url("../images/header-logo-bg-shape.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 230px;
-    z-index: -1;
-  }
-}
-
 .sparkle-logo {
   padding: 5px 0;
   position: relative;
@@ -383,44 +366,6 @@ li {
   color: var(--color2);
 }
 
-/* Responsive Styles */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .sparkle-header-topbar .marquee-content {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .sparkle-top-info .info-item {
-    margin-right: 10px;
-    margin-bottom: 5px;
-  }
-
-  .sparkle-main-header {
-    padding: 10px 0;
-  }
-
-  .sparkle-page-banner {
-    padding: 50px 0;
-  }
-
-  .sparkle-page-banner h1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .sparkle-top-info {
-    text-align: center;
-  }
-
-  .sparkle-main-header {
-    padding: 15px 0;
-  }
-
-  .sparkle-page-banner h1 {
-    font-size: 2.2rem;
-  }
-}
 /* index page */
 /* home carousel */
 section.home-carousel {
@@ -677,81 +622,6 @@ section.home-carousel .swiper-slide img {
   color: var(--color5);
 }
 
-/* Tablet Screens Media Query */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .welcome-section .welcome-section-title {
-    font-size: 2.2rem;
-  }
-
-  .welcome-section .welcome-section-subtitle {
-    font-size: 1.3rem;
-  }
-
-  .welcome-section .welcome-section-description {
-    font-size: 1rem;
-  }
-
-  .welcome-section .welcome-section-timer {
-    padding: 0.4rem;
-  }
-
-  .welcome-section .welcome-section-timer span {
-    font-size: 1.3rem;
-  }
-
-  .welcome-section .welcome-section-feature {
-    padding: 0.75rem;
-  }
-}
-
-/* Mobile Screens Media Query */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .welcome-section .welcome-section-title {
-    font-size: 1.8rem;
-  }
-
-  .welcome-section .welcome-section-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .welcome-section .welcome-section-description {
-    font-size: 0.9rem;
-  }
-
-  .welcome-section .welcome-section-buttons {
-    flex-direction: column;
-  }
-
-  .welcome-section .welcome-section-btn {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .welcome-section .welcome-section-card {
-    padding: 1.5rem;
-  }
-
-  .welcome-section .welcome-section-timer {
-    padding: 0.3rem;
-  }
-
-  .welcome-section .welcome-section-timer span {
-    font-size: 1.2rem;
-  }
-
-  .welcome-section .welcome-section-features {
-    flex-direction: column;
-  }
-
-  .welcome-section .welcome-section-feature {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .welcome-section .welcome-section-card-title {
-    font-size: 1.3rem;
-  }
-}
 /* products section */
 /* Products Section Styles */
 .products-section {
@@ -1038,69 +908,6 @@ section.home-carousel .swiper-slide img {
   transform: translateX(4px);
 }
 
-/* Tablet Screens Media Query */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .products-section .products-section-title {
-    font-size: 2.2rem;
-  }
-
-  .products-section .products-section-card-image {
-    height: 180px;
-  }
-
-  .products-section .products-section-card-title {
-    font-size: 1.15rem;
-  }
-
-  .products-section .products-section-card-price {
-    font-size: 1.1rem;
-  }
-
-  .products-section .products-section-card-content {
-    padding: 1.25rem;
-  }
-}
-
-/* Mobile Screens Media Query */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .products-section .products-section-title {
-    font-size: 1.8rem;
-  }
-
-  .products-section .products-section-subtitle {
-    font-size: 0.95rem;
-  }
-
-  .products-section .products-section-card-image {
-    height: 160px;
-  }
-
-  .products-section .products-section-card-content {
-    padding: 1rem;
-  }
-
-  .products-section .products-section-card-title {
-    font-size: 1.1rem;
-  }
-
-  .products-section .products-section-card-desc {
-    font-size: 0.85rem;
-  }
-
-  .products-section .products-section-card-footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .products-section .products-section-card-price {
-    margin-bottom: 0.5rem;
-  }
-
-  .products-section .products-section-card-btn {
-    width: 100%;
-    justify-content: center;
-  }
-}
 /* Parallax Section */
 .parallax-section {
   position: relative;
@@ -1175,69 +982,6 @@ section.home-carousel .swiper-slide img {
   transform: translateX(-50%) scale(1.05);
   box-shadow: 0 0 20px rgba(255, 45, 85, 0.5);
 }
-
-/* Responsive styles */
-
-/* Tablet: md (768px to 991.98px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .parallax-section .gradient-text {
-    font-size: 2.5rem;
-  }
-
-  .parallax-section .text-content {
-    padding: 1rem;
-  }
-  .parallax-section .parallax-section-btn {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    bottom: 1.5rem;
-  }
-}
-
-/* Mobile: sm (1px to 767.98px) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .parallax-section .gradient-text {
-    font-size: 1.8rem;
-  }
-
-  .parallax-section .text-content {
-    padding: 0.75rem;
-  }
-
-  /* Adjust image height on mobile */
-  .parallax-section .parallax-img {
-    min-height: 300px; /* Reduces the height on smaller screens */
-  }
-  .parallax-section .parallax-section-btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.95rem;
-    bottom: 1rem;
-  }
-}
-
-/* responsive styles */
-/* Tablet: md (768px to 991.98px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .parallax-section .gradient-text {
-    font-size: 2.5rem;
-  }
-
-  .parallax-section .text-content {
-    padding: 1rem;
-  }
-}
-
-/* Mobile: sm (1px to 767.98px) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .parallax-section .gradient-text {
-    font-size: 1.4rem;
-  }
-
-  .parallax-section .text-content {
-    padding: 0.75rem;
-  }
-}
-/* achievements section */
 /* Achievements Section Styles */
 .achievements-section {
   position: relative;
@@ -1450,76 +1194,6 @@ section.home-carousel .swiper-slide img {
   font-weight: 600;
   margin-top: 15px;
 }
-
-/* Responsive styles - Tablet (Medium devices) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .achievements-section {
-    padding: 80px 0;
-  }
-
-  .achievements-section .achievements-heading {
-    font-size: 2.5rem;
-  }
-
-  .achievements-section .achievements-counter-wrapper {
-    height: 200px;
-  }
-
-  .achievements-section .achievements-counter-number {
-    font-size: 3rem;
-  }
-
-  .achievements-section .achievements-counter-title {
-    font-size: 1rem;
-  }
-
-  .achievements-section .achievements-content {
-    margin-bottom: 40px;
-  }
-}
-
-/* Responsive styles - Mobile (Small devices) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .achievements-section {
-    padding: 60px 0;
-  }
-
-  .achievements-section .achievements-heading {
-    font-size: 2.2rem;
-  }
-
-  .achievements-section .achievements-description {
-    font-size: 1rem;
-  }
-
-  .achievements-section .achievements-content {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .achievements-section .achievements-heading::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .achievements-section .achievements-counter-wrapper {
-    height: 180px;
-    padding: 15px;
-  }
-
-  .achievements-section .achievements-counter-number {
-    font-size: 2.5rem;
-  }
-
-  .achievements-section .achievements-counter-plus {
-    font-size: 2rem;
-  }
-
-  .achievements-section .achievements-counter-title {
-    font-size: 0.9rem;
-    margin-top: 10px;
-  }
-}
 /* index wholesale & retail section */
 .section-wholesale-retail {
   background-color: var(--color5);
@@ -1619,35 +1293,12 @@ section.home-carousel .swiper-slide img {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .section-wholesale-retail .title {
-    font-size: 2rem;
-  }
-  .section-wholesale-retail .card-title {
-    font-size: 1.1rem;
-  }
-  .section-wholesale-retail .card-text {
-    font-size: 0.9rem;
-  }
 }
 
 /* Mobile */
 @media (min-width: 1px) and (max-width: 767.98px) {
-  .section-wholesale-retail .title {
-    font-size: 1.75rem;
-  }
-  .section-wholesale-retail .subtitle {
-    font-size: 0.95rem;
-  }
-  .section-wholesale-retail .card-title {
-    font-size: 1rem;
-  }
-  .section-wholesale-retail .card-text {
-    font-size: 0.85rem;
-  }
 }
 /* safety section index page */
-/* Safety Section Styles */
-/* Safety Section Styles */
 .safety-section {
   background-color: var(--color4);
   position: relative;
@@ -1904,93 +1555,6 @@ section.home-carousel .swiper-slide img {
 .safety-section .safety-cta:hover .safety-cta-icon {
   transform: translateX(5px);
 }
-
-/* Responsive styles - Tablet (Medium devices) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .safety-section {
-    padding: 80px 0;
-  }
-
-  .safety-section .safety-content {
-    padding-left: 15px;
-  }
-
-  .safety-section .safety-heading {
-    font-size: 2.2rem;
-  }
-
-  .safety-section .safety-feature-icon {
-    flex: 0 0 50px;
-    height: 50px;
-    font-size: 1.3rem;
-  }
-
-  .safety-section .safety-feature-text h4 {
-    font-size: 1.1rem;
-  }
-
-  .safety-section .safety-badge {
-    width: 80px;
-    height: 80px;
-    top: 20px;
-    right: 20px;
-  }
-
-  .safety-section .safety-badge i {
-    font-size: 2rem;
-  }
-}
-
-/* Responsive styles - Mobile (Small devices) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .safety-section {
-    padding: 60px 0;
-  }
-
-  .safety-section .safety-content {
-    padding-left: 0;
-    margin-top: 30px;
-  }
-
-  .safety-section .safety-heading {
-    font-size: 2rem;
-  }
-
-  .safety-section .safety-badge {
-    width: 70px;
-    height: 70px;
-    top: 15px;
-    right: 15px;
-  }
-
-  .safety-section .safety-badge i {
-    font-size: 1.8rem;
-    margin-bottom: 3px;
-  }
-
-  .safety-section .safety-badge span {
-    font-size: 0.8rem;
-  }
-
-  .safety-section .safety-description {
-    font-size: 1rem;
-  }
-
-  .safety-section .safety-feature-item {
-    margin-bottom: 20px;
-  }
-
-  .safety-section .safety-feature-icon {
-    flex: 0 0 45px;
-    height: 45px;
-    margin-right: 15px;
-    font-size: 1.2rem;
-  }
-
-  .safety-section .safety-feature-text h4 {
-    font-size: 1rem;
-  }
-}
 /* animations  */
 /* Additional Animation CSS for Safety Section */
 
@@ -2124,93 +1688,6 @@ section.home-carousel .swiper-slide img {
 
 .safety-section .safety-feature-item:hover::before {
   width: 80%;
-}
-
-/* Responsive styles - Tablet (Medium devices) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .safety-section {
-    padding: 80px 0;
-  }
-
-  .safety-section .safety-content {
-    padding-left: 15px;
-  }
-
-  .safety-section .safety-heading {
-    font-size: 2.2rem;
-  }
-
-  .safety-section .safety-feature-icon {
-    flex: 0 0 50px;
-    height: 50px;
-    font-size: 1.3rem;
-  }
-
-  .safety-section .safety-feature-text h4 {
-    font-size: 1.1rem;
-  }
-
-  .safety-section .safety-badge {
-    width: 80px;
-    height: 80px;
-    top: 20px;
-    right: 20px;
-  }
-
-  .safety-section .safety-badge i {
-    font-size: 2rem;
-  }
-}
-
-/* Responsive styles - Mobile (Small devices) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .safety-section {
-    padding: 60px 0;
-  }
-
-  .safety-section .safety-content {
-    padding-left: 0;
-    margin-top: 30px;
-  }
-
-  .safety-section .safety-heading {
-    font-size: 2rem;
-  }
-
-  .safety-section .safety-badge {
-    width: 70px;
-    height: 70px;
-    top: 15px;
-    right: 15px;
-  }
-
-  .safety-section .safety-badge i {
-    font-size: 1.8rem;
-    margin-bottom: 3px;
-  }
-
-  .safety-section .safety-badge span {
-    font-size: 0.8rem;
-  }
-
-  .safety-section .safety-description {
-    font-size: 1rem;
-  }
-
-  .safety-section .safety-feature-item {
-    margin-bottom: 20px;
-  }
-
-  .safety-section .safety-feature-icon {
-    flex: 0 0 45px;
-    height: 45px;
-    margin-right: 15px;
-    font-size: 1.2rem;
-  }
-
-  .safety-section .safety-feature-text h4 {
-    font-size: 1rem;
-  }
 }
 /* Indexcta Section Styles */
 .indexcta-section {
@@ -2435,87 +1912,9 @@ section.home-carousel .swiper-slide img {
     transform: translateY(0) rotate(0deg);
   }
 }
-
-/* Tablet (md screens) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .indexcta-section {
-    padding: 70px 0;
-  }
-
-  .indexcta-section .indexcta-title {
-    font-size: 2rem;
-  }
-
-  .indexcta-section .indexcta-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .indexcta-section .indexcta-text {
-    font-size: 1rem;
-  }
-
-  .indexcta-section .indexcta-image-container {
-    margin-top: 30px;
-  }
-
-  .indexcta-section .indexcta-btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
-}
-
-/* Mobile (sm/xs screens) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .indexcta-section {
-    padding: 50px 0;
-  }
-
-  .indexcta-section .indexcta-title {
-    font-size: 1.8rem;
-  }
-
-  .indexcta-section .indexcta-subtitle {
-    font-size: 1rem;
-  }
-
-  .indexcta-section .indexcta-text {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-  }
-
-  .indexcta-section .indexcta-icon-wrapper {
-    width: 40px;
-    height: 40px;
-  }
-
-  .indexcta-section .indexcta-icon {
-    font-size: 18px;
-  }
-
-  .indexcta-section .indexcta-contact-label {
-    font-size: 1rem;
-  }
-
-  .indexcta-section .indexcta-contact-value {
-    font-size: 0.9rem;
-  }
-
-  .indexcta-section .indexcta-image-container {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-
-  .indexcta-section .indexcta-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    width: 100%;
-    text-align: center;
-  }
-}
 /* index page ends */
 /* about page starts */
 /* about page intro section */
-/* About Page - Intro Section Styles */
 .about-intro {
   position: relative;
   overflow: hidden;
@@ -2741,106 +2140,6 @@ section.home-carousel .swiper-slide img {
 
 .about-intro .about-intro-content {
   animation: fadeInUp 0.8s ease forwards;
-}
-
-/* Media Queries - Tablet (MD screens) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .about-intro .about-intro-title {
-    font-size: 2.3rem;
-  }
-
-  .about-intro .about-intro-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .about-intro .about-intro-image-accent {
-    right: 1rem;
-    transform: translateY(20%);
-  }
-
-  .about-intro .about-intro-stats {
-    padding: 1.2rem;
-  }
-
-  .about-intro .about-intro-stat {
-    padding: 0 1rem;
-  }
-
-  .about-intro .about-intro-stat-number {
-    font-size: 1.7rem;
-  }
-
-  .about-intro .about-intro-feature {
-    margin-right: 1.5rem;
-  }
-}
-
-/* Media Queries - Mobile (SM screens) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .about-intro .about-intro-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .about-intro .about-intro-subtitle {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .about-intro .about-intro-text {
-    text-align: center;
-  }
-
-  .about-intro .about-intro-features {
-    justify-content: center;
-  }
-
-  .about-intro .about-intro-feature {
-    margin: 0.5rem 1rem;
-  }
-
-  .about-intro .about-intro-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-intro .about-intro-btn,
-  .about-intro .about-intro-btn-outline {
-    margin: 0.5rem 0;
-    width: 80%;
-    text-align: center;
-  }
-
-  .about-intro .about-intro-image-container {
-    margin-top: 2rem;
-  }
-
-  .about-intro .about-intro-image-accent {
-    position: relative;
-    right: auto;
-    transform: translateY(-25%);
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .about-intro .about-intro-stats {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .about-intro .about-intro-stat {
-    padding: 0.75rem 0;
-  }
-
-  .about-intro .about-intro-stat:not(:last-child)::after {
-    right: 50%;
-    top: auto;
-    bottom: 0;
-    transform: translateX(50%);
-    width: 70%;
-    height: 1px;
-  }
 }
 /* vision,mission,motto section */
 /* About Page - Values Section Styles */
@@ -3284,109 +2583,6 @@ section.home-carousel .swiper-slide img {
 .about-values .about-values-cta-btn {
   animation: pulse 2s infinite;
 }
-
-/* Media Queries - Tablet (MD screens) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .about-values .about-values-title {
-    font-size: 2.4rem;
-  }
-
-  .about-values .about-values-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .about-values .about-values-card {
-    padding: 2rem 1.25rem;
-  }
-
-  .about-values .about-values-card-title {
-    font-size: 1.3rem;
-  }
-
-  .about-values .about-values-principles {
-    padding: 2rem;
-  }
-
-  .about-values .about-values-principles-title {
-    font-size: 1.8rem;
-  }
-
-  .about-values .about-values-principles-grid {
-    gap: 1.5rem;
-  }
-
-  .about-values .about-values-principle-icon {
-    font-size: 1.8rem;
-    width: 45px;
-    height: 45px;
-  }
-
-  .about-values .about-values-cta-text {
-    font-size: 1.3rem;
-  }
-}
-
-/* Media Queries - Mobile (SM screens) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .about-values .about-values-title {
-    font-size: 2rem;
-  }
-
-  .about-values .about-values-subtitle {
-    font-size: 1rem;
-  }
-
-  .about-values .about-values-card {
-    padding: 1.75rem 1.25rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .about-values .about-values-card-title {
-    font-size: 1.25rem;
-  }
-
-  .about-values .about-values-principles {
-    padding: 1.75rem 1.25rem;
-  }
-
-  .about-values .about-values-principles-title {
-    font-size: 1.6rem;
-  }
-
-  .about-values .about-values-principle {
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-  }
-
-  .about-values .about-values-principle-icon {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    margin-right: 1rem;
-  }
-
-  .about-values .about-values-principle-content h4 {
-    font-size: 1.1rem;
-  }
-
-  .about-values .about-values-principle-content p {
-    font-size: 0.9rem;
-  }
-
-  .about-values .about-values-cta {
-    padding: 1.5rem 1rem;
-  }
-
-  .about-values .about-values-cta-text {
-    font-size: 1.2rem;
-  }
-
-  .about-values .about-values-cta-btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
-    width: 80%;
-  }
-}
 /* about brands section */
 /* About Page - Brands Swiper Section Styles */
 .about-brands {
@@ -3540,54 +2736,6 @@ section.home-carousel .swiper-slide img {
 
 .about-brands .about-brands-item.animated {
   animation: fadeInScale 1.5s ease forwards;
-}
-
-/* Media Queries - Tablet (MD screens) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .about-brands .about-brands-title {
-    font-size: 2.4rem;
-  }
-
-  .about-brands .about-brands-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .about-brands .about-brands-item {
-    height: 160px;
-    padding: 1.2rem;
-  }
-
-  .about-brands .about-brands-logo {
-    max-height: 70px;
-  }
-}
-
-/* Media Queries - Mobile (SM screens) */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .about-brands .about-brands-title {
-    font-size: 2rem;
-  }
-
-  .about-brands .about-brands-subtitle {
-    font-size: 1rem;
-  }
-
-  .about-brands .about-brands-item {
-    height: 140px;
-    padding: 1rem;
-  }
-
-  .about-brands .about-brands-logo {
-    max-height: 60px;
-  }
-
-  .about-brands .about-brands-overlay h5 {
-    font-size: 1rem;
-  }
-
-  .about-brands .about-brands-overlay p {
-    font-size: 0.8rem;
-  }
 }
 /* about page ends */
 /* safety page */
@@ -3947,58 +3095,6 @@ section.home-carousel .swiper-slide img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
-/* Responsive Adjustments */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .safety-guidelines__column {
-    margin-bottom: 30px;
-    padding: 20px;
-  }
-
-  .safety-guidelines__card {
-    height: 140px;
-  }
-
-  .safety-guidelines .section-title {
-    font-size: 2rem;
-  }
-
-  .safety-guidelines__column-title {
-    font-size: 1.3rem;
-  }
-
-  .safety-guidelines__cta {
-    text-align: center;
-  }
-
-  .safety-guidelines__cta h4 {
-    font-size: 1.3rem;
-  }
-
-  .safety-guidelines__cta p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-}
-
-/* Tablet adjustments */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .safety-guidelines__column {
-    padding: 25px;
-  }
-
-  .safety-guidelines__card {
-    height: 130px;
-  }
-
-  .safety-guidelines__column-title {
-    font-size: 1.4rem;
-  }
-
-  .safety-guidelines__cta h4 {
-    font-size: 1.4rem;
-  }
-}
 /* contact page */
 /* Fireworks Contact Section Styling */
 .fireworks-contact {
@@ -4306,77 +3402,6 @@ section.home-carousel .swiper-slide img {
   color: #fff;
   text-decoration: none;
 }
-
-/* Responsive Styles */
-/* Mobile */
-@media (min-width: 1px) and (max-width: 767.98px) {
-  .fireworks-contact {
-    padding: 40px 0;
-  }
-
-  .fireworks-contact-title {
-    font-size: 28px;
-  }
-
-  .fireworks-contact-subtitle {
-    font-size: 16px;
-  }
-
-  .fireworks-contact-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    gap: 15px;
-  }
-
-  .fireworks-contact-card-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-
-  .fireworks-contact-card-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .fireworks-contact-phone-item,
-  .fireworks-contact-email-item {
-    align-items: center;
-  }
-
-  .fireworks-contact-map {
-    height: 250px;
-  }
-
-  .fireworks-contact-directions-btn {
-    bottom: 15px;
-    right: 15px;
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .fireworks-contact {
-    padding: 60px 0;
-  }
-
-  .fireworks-contact-title {
-    font-size: 36px;
-  }
-
-  .fireworks-contact-card {
-    padding: 20px;
-  }
-
-  .fireworks-contact-map {
-    height: 300px;
-  }
-}
-
 /* Animation keyframes */
 @keyframes sparkle {
   0% {
@@ -4566,7 +3591,23 @@ section.home-carousel .swiper-slide img {
     text-align: left;
   }
 }
-
+/* large screen responsive styles */
+/* Logo Background Shape (visible only on lg screens) */
+@media screen and (min-width: 992px) {
+  .sparkle-logo-area:before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: -15px;
+    height: 160px;
+    background-image: url("../images/header-logo-bg-shape.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 230px;
+    z-index: -1;
+  }
+}
 /* Bottom Row with Copyright */
 .fireworks-footer .border-top {
   border-color: rgba(255, 255, 255, 0.1) !important;
@@ -4685,17 +3726,9 @@ section.home-carousel .swiper-slide img {
 }
 /* Theme Button on Tablet and Mobile */
 @media (max-width: 991.98px) {
-  .theme-button {
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-  }
 }
 
 @media (max-width: 767.98px) {
-  .theme-button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-  }
 }
 /* custom css ends */
 .w0 {
@@ -4751,15 +3784,803 @@ section.home-carousel .swiper-slide img {
     opacity: 1;
   }
 }
-/* ******************************************************** Media Queries ********************************************************/
+/* ******************************************************** Media Queries********************************************************/
 /* mobile media query*/
 @media (min-width: 1px) and (max-width: 767.98px) {
+  /* theme button */
+  .theme-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  /* contact page section */
+  .fireworks-contact {
+    padding: 40px 0;
+  }
+
+  .fireworks-contact-title {
+    font-size: 28px;
+  }
+
+  .fireworks-contact-subtitle {
+    font-size: 16px;
+  }
+
+  .fireworks-contact-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .fireworks-contact-card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .fireworks-contact-card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .fireworks-contact-phone-item,
+  .fireworks-contact-email-item {
+    align-items: center;
+  }
+
+  .fireworks-contact-map {
+    height: 250px;
+  }
+
+  .fireworks-contact-directions-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  /* safety guidelines section */
+  .safety-guidelines__column {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .safety-guidelines__card {
+    height: 140px;
+  }
+
+  .safety-guidelines .section-title {
+    font-size: 2rem;
+  }
+
+  .safety-guidelines__column-title {
+    font-size: 1.3rem;
+  }
+
+  .safety-guidelines__cta {
+    text-align: center;
+  }
+
+  .safety-guidelines__cta h4 {
+    font-size: 1.3rem;
+  }
+
+  .safety-guidelines__cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  /* about page ends */
+  /* about brands section */
+  .about-brands .about-brands-title {
+    font-size: 2rem;
+  }
+
+  .about-brands .about-brands-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-brands .about-brands-item {
+    height: 140px;
+    padding: 1rem;
+  }
+
+  .about-brands .about-brands-logo {
+    max-height: 60px;
+  }
+
+  .about-brands .about-brands-overlay h5 {
+    font-size: 1rem;
+  }
+
+  .about-brands .about-brands-overlay p {
+    font-size: 0.8rem;
+  }
+  /* about-values section */
+  .about-values .about-values-title {
+    font-size: 2rem;
+  }
+
+  .about-values .about-values-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-values .about-values-card {
+    padding: 1.75rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-values .about-values-card-title {
+    font-size: 1.25rem;
+  }
+
+  .about-values .about-values-principles {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .about-values .about-values-principles-title {
+    font-size: 1.6rem;
+  }
+
+  .about-values .about-values-principle {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-values .about-values-principle-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  .about-values .about-values-principle-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .about-values .about-values-principle-content p {
+    font-size: 0.9rem;
+  }
+
+  .about-values .about-values-cta {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-values .about-values-cta-text {
+    font-size: 1.2rem;
+  }
+
+  .about-values .about-values-cta-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  /* about intro section */
+  .about-intro .about-intro-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-intro .about-intro-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .about-intro .about-intro-text {
+    text-align: center;
+  }
+
+  .about-intro .about-intro-features {
+    justify-content: center;
+  }
+
+  .about-intro .about-intro-feature {
+    margin: 0.5rem 1rem;
+  }
+
+  .about-intro .about-intro-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-intro .about-intro-btn,
+  .about-intro .about-intro-btn-outline {
+    margin: 0.5rem 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .about-intro .about-intro-image-container {
+    margin-top: 2rem;
+  }
+
+  .about-intro .about-intro-image-accent {
+    position: relative;
+    right: auto;
+    transform: translateY(-25%);
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .about-intro .about-intro-stats {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .about-intro .about-intro-stat {
+    padding: 0.75rem 0;
+  }
+
+  .about-intro .about-intro-stat:not(:last-child)::after {
+    right: 50%;
+    top: auto;
+    bottom: 0;
+    transform: translateX(50%);
+    width: 70%;
+    height: 1px;
+  }
+  /* index page ends */
+  /* index cta */
+  .indexcta-section {
+    padding: 50px 0;
+  }
+
+  .indexcta-section .indexcta-title {
+    font-size: 1.8rem;
+  }
+
+  .indexcta-section .indexcta-subtitle {
+    font-size: 1rem;
+  }
+
+  .indexcta-section .indexcta-text {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .indexcta-section .indexcta-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .indexcta-section .indexcta-icon {
+    font-size: 18px;
+  }
+
+  .indexcta-section .indexcta-contact-label {
+    font-size: 1rem;
+  }
+
+  .indexcta-section .indexcta-contact-value {
+    font-size: 0.9rem;
+  }
+
+  .indexcta-section .indexcta-image-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .indexcta-section .indexcta-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+  /* index safety section */
+  .safety-section {
+    padding: 60px 0;
+  }
+
+  .safety-section .safety-content {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .safety-section .safety-heading {
+    font-size: 2rem;
+  }
+
+  .safety-section .safety-badge {
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .safety-section .safety-badge i {
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+  }
+
+  .safety-section .safety-badge span {
+    font-size: 0.8rem;
+  }
+
+  .safety-section .safety-description {
+    font-size: 1rem;
+  }
+
+  .safety-section .safety-feature-item {
+    margin-bottom: 20px;
+  }
+
+  .safety-section .safety-feature-icon {
+    flex: 0 0 45px;
+    height: 45px;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+
+  .safety-section .safety-feature-text h4 {
+    font-size: 1rem;
+  }
+  /* index wholesale-retail section */
+  .section-wholesale-retail .title {
+    font-size: 1.75rem;
+  }
+  .section-wholesale-retail .subtitle {
+    font-size: 0.95rem;
+  }
+  .section-wholesale-retail .card-title {
+    font-size: 1rem;
+  }
+  .section-wholesale-retail .card-text {
+    font-size: 0.85rem;
+  }
+  /* index achievements section */
+  .achievements-section {
+    padding: 60px 0;
+  }
+
+  .achievements-section .achievements-heading {
+    font-size: 2.2rem;
+  }
+
+  .achievements-section .achievements-description {
+    font-size: 1rem;
+  }
+
+  .achievements-section .achievements-content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .achievements-section .achievements-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .achievements-section .achievements-counter-wrapper {
+    height: 180px;
+    padding: 15px;
+  }
+
+  .achievements-section .achievements-counter-number {
+    font-size: 2.5rem;
+  }
+
+  .achievements-section .achievements-counter-plus {
+    font-size: 2rem;
+  }
+
+  .achievements-section .achievements-counter-title {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  /* index parallax section */
+  .parallax-section .gradient-text {
+    font-size: 1.8rem;
+  }
+
+  .parallax-section .text-content {
+    padding: 0.75rem;
+  }
+
+  /* Adjust image height on mobile */
+  .parallax-section .parallax-img {
+    min-height: 300px; /* Reduces the height on smaller screens */
+  }
+  .parallax-section .parallax-section-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+    bottom: 1rem;
+  }
+  /* index products section */
+  .products-section .products-section-title {
+    font-size: 1.8rem;
+  }
+
+  .products-section .products-section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .products-section .products-section-card-image {
+    height: 160px;
+  }
+
+  .products-section .products-section-card-content {
+    padding: 1rem;
+  }
+
+  .products-section .products-section-card-title {
+    font-size: 1.1rem;
+  }
+
+  .products-section .products-section-card-desc {
+    font-size: 0.85rem;
+  }
+
+  .products-section .products-section-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products-section .products-section-card-price {
+    margin-bottom: 0.5rem;
+  }
+
+  .products-section .products-section-card-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  /* index welcome section */
+  .welcome-section .welcome-section-title {
+    font-size: 1.8rem;
+  }
+
+  .welcome-section .welcome-section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .welcome-section .welcome-section-description {
+    font-size: 0.9rem;
+  }
+
+  .welcome-section .welcome-section-buttons {
+    flex-direction: column;
+  }
+
+  .welcome-section .welcome-section-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .welcome-section .welcome-section-card {
+    padding: 1.5rem;
+  }
+
+  .welcome-section .welcome-section-timer {
+    padding: 0.3rem;
+  }
+
+  .welcome-section .welcome-section-timer span {
+    font-size: 1.2rem;
+  }
+
+  .welcome-section .welcome-section-features {
+    flex-direction: column;
+  }
+
+  .welcome-section .welcome-section-feature {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .welcome-section .welcome-section-card-title {
+    font-size: 1.3rem;
+  }
+  /* header */
+  .sparkle-header-topbar .marquee-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .sparkle-top-info .info-item {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  .sparkle-main-header {
+    padding: 10px 0;
+  }
+
+  .sparkle-page-banner {
+    padding: 50px 0;
+  }
+
+  .sparkle-page-banner h1 {
+    font-size: 1.8rem;
+  }
   .pad {
     padding: 40px 0;
   }
 }
 /* tablet media query */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* theme button */
+  .theme-button {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+  }
+  /* contact page section */
+  .fireworks-contact {
+    padding: 60px 0;
+  }
+
+  .fireworks-contact-title {
+    font-size: 36px;
+  }
+
+  .fireworks-contact-card {
+    padding: 20px;
+  }
+
+  .fireworks-contact-map {
+    height: 300px;
+  }
+  /* safety guidelines section */
+  .safety-guidelines__column {
+    padding: 25px;
+  }
+
+  .safety-guidelines__card {
+    height: 130px;
+  }
+
+  .safety-guidelines__column-title {
+    font-size: 1.4rem;
+  }
+
+  .safety-guidelines__cta h4 {
+    font-size: 1.4rem;
+  }
+  /* about page ends */
+  /* about brands section */
+  .about-brands .about-brands-title {
+    font-size: 2.4rem;
+  }
+
+  .about-brands .about-brands-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-brands .about-brands-item {
+    height: 160px;
+    padding: 1.2rem;
+  }
+
+  .about-brands .about-brands-logo {
+    max-height: 70px;
+  }
+  /* about values section */
+  .about-values .about-values-title {
+    font-size: 2.4rem;
+  }
+
+  .about-values .about-values-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-values .about-values-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .about-values .about-values-card-title {
+    font-size: 1.3rem;
+  }
+
+  .about-values .about-values-principles {
+    padding: 2rem;
+  }
+
+  .about-values .about-values-principles-title {
+    font-size: 1.8rem;
+  }
+
+  .about-values .about-values-principles-grid {
+    gap: 1.5rem;
+  }
+
+  .about-values .about-values-principle-icon {
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .about-values .about-values-cta-text {
+    font-size: 1.3rem;
+  }
+  /* about page intro section */
+  .about-intro .about-intro-title {
+    font-size: 2.3rem;
+  }
+
+  .about-intro .about-intro-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-intro .about-intro-image-accent {
+    right: 1rem;
+    transform: translateY(20%);
+  }
+
+  .about-intro .about-intro-stats {
+    padding: 1.2rem;
+  }
+
+  .about-intro .about-intro-stat {
+    padding: 0 1rem;
+  }
+
+  .about-intro .about-intro-stat-number {
+    font-size: 1.7rem;
+  }
+
+  .about-intro .about-intro-feature {
+    margin-right: 1.5rem;
+  }
+  /* index page ends */
+  /* index cta section */
+  .indexcta-section {
+    padding: 70px 0;
+  }
+
+  .indexcta-section .indexcta-title {
+    font-size: 2rem;
+  }
+
+  .indexcta-section .indexcta-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .indexcta-section .indexcta-text {
+    font-size: 1rem;
+  }
+
+  .indexcta-section .indexcta-image-container {
+    margin-top: 30px;
+  }
+
+  .indexcta-section .indexcta-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  /* index safety section */
+  .safety-section {
+    padding: 80px 0;
+  }
+
+  .safety-section .safety-content {
+    padding-left: 15px;
+  }
+
+  .safety-section .safety-heading {
+    font-size: 2.2rem;
+  }
+
+  .safety-section .safety-feature-icon {
+    flex: 0 0 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .safety-section .safety-feature-text h4 {
+    font-size: 1.1rem;
+  }
+
+  .safety-section .safety-badge {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .safety-section .safety-badge i {
+    font-size: 2rem;
+  }
+  /* index wholesale - retail section */
+  .section-wholesale-retail .title {
+    font-size: 2rem;
+  }
+  .section-wholesale-retail .card-title {
+    font-size: 1.1rem;
+  }
+  .section-wholesale-retail .card-text {
+    font-size: 0.9rem;
+  }
+  /* index achievements section */
+  .achievements-section {
+    padding: 80px 0;
+  }
+
+  .achievements-section .achievements-heading {
+    font-size: 2.5rem;
+  }
+
+  .achievements-section .achievements-counter-wrapper {
+    height: 200px;
+  }
+
+  .achievements-section .achievements-counter-number {
+    font-size: 3rem;
+  }
+
+  .achievements-section .achievements-counter-title {
+    font-size: 1rem;
+  }
+
+  .achievements-section .achievements-content {
+    margin-bottom: 40px;
+  }
+  /* index parallax section */
+  .parallax-section .gradient-text {
+    font-size: 2.5rem;
+  }
+
+  .parallax-section .text-content {
+    padding: 1rem;
+  }
+  .parallax-section .parallax-section-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    bottom: 1.5rem;
+  }
+  /* index products section */
+  .products-section .products-section-title {
+    font-size: 2.2rem;
+  }
+
+  .products-section .products-section-card-image {
+    height: 180px;
+  }
+
+  .products-section .products-section-card-title {
+    font-size: 1.15rem;
+  }
+
+  .products-section .products-section-card-price {
+    font-size: 1.1rem;
+  }
+
+  .products-section .products-section-card-content {
+    padding: 1.25rem;
+  }
+  /* index welcome section */
+  .welcome-section .welcome-section-title {
+    font-size: 2.2rem;
+  }
+
+  .welcome-section .welcome-section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .welcome-section .welcome-section-description {
+    font-size: 1rem;
+  }
+
+  .welcome-section .welcome-section-timer {
+    padding: 0.4rem;
+  }
+
+  .welcome-section .welcome-section-timer span {
+    font-size: 1.3rem;
+  }
+
+  .welcome-section .welcome-section-feature {
+    padding: 0.75rem;
+  }
+  /* header */
+  .sparkle-top-info {
+    text-align: center;
+  }
+
+  .sparkle-main-header {
+    padding: 15px 0;
+  }
+
+  .sparkle-page-banner h1 {
+    font-size: 2.2rem;
+  }
   .pad {
     padding: 40px 0;
   }

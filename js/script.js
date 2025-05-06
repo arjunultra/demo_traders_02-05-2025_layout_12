@@ -537,7 +537,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to determine start position based on viewport width
   function getStartPosition() {
-    return window.innerWidth < 768 ? "top 90%" : "top 80%"; // Adjust the start position for smaller screens
+    return window.innerWidth < 768 ? "top 96%" : "top 80%"; // Adjust the start position for smaller screens
   }
 
   // Animate the main h1 heading
