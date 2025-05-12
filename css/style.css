@@ -3676,6 +3676,17 @@ section.home-carousel .swiper-slide img {
 .bg-black {
   background-color: var(--color4) !important;
 }
+/* navbar fixed */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white; /* Optional, if you want a solid background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* theme button */
 .theme-btn {
   background-color: var(--color1);

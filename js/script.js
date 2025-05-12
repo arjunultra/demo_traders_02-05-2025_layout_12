@@ -576,6 +576,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// navbar fixed on top when scroll (sticky nav)
+$(document).ready(function () {
+  // Cache elements for better performance
+  const $topBar = $('#headerTop');
+  const $infoBar = $('.sparkle-top-info');
+  const $mainHeader = $('.sparkle-main-header-wrapper');
+  const scrollOffset = 60;
+  let isHidden = false;
 
+  $(window).on('scroll', function () {
+      if ($(this).scrollTop() > scrollOffset) {
+          if (!isHidden) {
+              $topBar.slideUp(300);
+              $infoBar.slideUp(300);
+              $mainHeader.addClass('fixed-header');
+              isHidden = true;
+          }
+      } else {
+          if (isHidden) {
+              $topBar.slideDown(300);
+              $infoBar.slideDown(300);
+              $mainHeader.removeClass('fixed-header');
+              isHidden = false;
+          }
+      }
+  });
+});
 
 
